@@ -140,7 +140,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150692074}
-  m_Mesh: {fileID: 951596982}
+  m_Mesh: {fileID: 614062761}
 --- !u!23 &150692076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 333102414}
+  - {fileID: 402690045}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,8 +220,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/LifeSource.xml
   mAspectRatio: 1.414481
   mImageTargetType: 0
-  mWidth: 0.41999996
-  mHeight: 0.594082
+  mWidth: 7.0697308
+  mHeight: 10
 --- !u!4 &150692080
 Transform:
   m_ObjectHideFlags: 0
@@ -231,13 +231,13 @@ Transform:
   m_GameObject: {fileID: 150692074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.594082, y: 0.594082, z: 0.594082}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 1844747859}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &333102414
+--- !u!21 &402690045
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -246,7 +246,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'TemplateMaterial
 
-    -4838'
+    68500'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -265,13 +265,13 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!43 &951596982
+--- !u!43 &614062761
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh-4834
+  m_Name: ImageTargetMesh68490
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -598,7 +598,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531472235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0014, y: 0, z: 0.0024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
