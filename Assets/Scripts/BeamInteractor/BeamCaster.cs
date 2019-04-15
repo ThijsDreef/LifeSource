@@ -7,26 +7,35 @@ public class BeamCaster : MonoBehaviour
 {
     private List<Vector3> hitPoints = new List<Vector3>();
     private BeamVisualizer beamVisualizer;
-    private const int MAX_DISTANCE = 10;
+    private const int MAX_DISTANCE = 25;
+    private const int MAX_BOUNCE = 3;
     // Start is called before the first frame update
     void Start() {
         beamVisualizer = GetComponent<BeamVisualizer>();
+    }
 
-        StartMapping();
+    private void FixedUpdate() {
+        hitPoints.Clear();
+        CalculateLine(transform.position, transform.forward);
         beamVisualizer.VisualDraw(hitPoints);
     }
 
-    private void StartMapping() {
+    private void CalculateLine(Vector3 startPosition, Vector3 direction) {
         RaycastHit hit;
-        hitPoints.Add(transform.position);
-        if(Physics.Raycast(transform.position, Vector3.forward, out hit, MAX_DISTANCE)) {
-            hitPoints.Add(hit.transform.position);
+        if(hitPoints.Count < MAX_BOUNCE) {
+        hitPoints.Add(startPosition);
+        if(Physics.Raycast(startPosition, direction, out hit, MAX_DISTANCE)) {
             if(hit.collider.CompareTag("Reflectable")) {
-                Vector3.Reflect(hit.transform.position, hit.normal);
+                direction = Vector3.Reflect(hit.point - startPosition, hit.normal);
+                CalculateLine(hit.point, direction);
+            }
+            else {
+                hitPoints.Add(hit.transform.position);
             }
         }
         else {
-            hitPoints.Add(Vector3.forward * MAX_DISTANCE);
+            hitPoints.Add(startPosition + direction * MAX_DISTANCE);
+        }           
         }
     }
 }
