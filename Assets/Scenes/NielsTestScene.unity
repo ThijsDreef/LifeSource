@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.23
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.23}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -204,7 +204,7 @@ Transform:
   m_LocalScale: {x: 0.32586735, y: 0.016323602, z: 0.12422237}
   m_Children: []
   m_Father: {fileID: 1934330201}
-  m_RootOrder: 98
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 34.394}
 --- !u!65 &146168385
 BoxCollider:
@@ -310,7 +310,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1661110462}
+  - {fileID: 609933293}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -392,6 +392,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &609933293
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'TemplateMaterial
+
+    23906'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 25d7e4d196584392a6b4ea267c85b613, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &723957852
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,34 +705,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1033825421}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1661110462
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TemplateMaterial
-
-    11606'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 25d7e4d196584392a6b4ea267c85b613, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!43 &1883710604
 Mesh:
   m_ObjectHideFlags: 0
@@ -992,6 +992,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.23
       objectReference: {fileID: 0}
+    - target: {fileID: 3209899788714555001, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0052
+      objectReference: {fileID: 0}
+    - target: {fileID: 3209899788714555001, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1962
+      objectReference: {fileID: 0}
     - target: {fileID: 4178961275926372771, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
         type: 3}
       propertyPath: m_LocalScale.z
@@ -1006,18 +1016,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.1077
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 48944470, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1611,14 +1609,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1391740115541648798, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2014,10 +2004,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1505102471823277394, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2143,6 +2129,30 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1161212538, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.036
@@ -2175,16 +2185,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3209899788714555001, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0052
-      objectReference: {fileID: 0}
-    - target: {fileID: 3209899788714555001, guid: 4bb8855aec27b7a46b1212bcfe90b6b4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1962
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb8855aec27b7a46b1212bcfe90b6b4, type: 3}
 --- !u!4 &1934330201 stripped
@@ -2199,20 +2199,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1934330200}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2075565214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075565210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c91a27d3606f4cf46b6cc32dc2857e5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdInteractionTime: 1
-  helpObj: {fileID: 1023506675}
 --- !u!64 &2075565215
 MeshCollider:
   m_ObjectHideFlags: 0
