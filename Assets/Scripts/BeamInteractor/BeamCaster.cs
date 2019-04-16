@@ -6,29 +6,30 @@ using UnityEngine;
 public class BeamCaster : MonoBehaviour
 {
     private List<Vector3> hitPoints = new List<Vector3>();
-    private Vector3 rotationCheck;
+    private List<Transform> objectTransforms = new List<Transform>();
+    private List<Quaternion> objectRotations = new List<Quaternion>();
     private GameObject interactable;
+    private Quaternion currentRotation;
     private BeamVisualizer beamVisualizer;
     private const int MAX_DISTANCE = 25;
     private const int MAX_BOUNCE = 5;
 
-    void Start() {
+    private void Awake() {
         beamVisualizer = GetComponent<BeamVisualizer>();
-        rotationCheck = transform.rotation.eulerAngles;
     }
 
     private void FixedUpdate() {
-        if(rotationCheck != transform.rotation.eulerAngles) {
+        if(RotationCheck()) {
+            currentRotation = transform.rotation;
             UpdateHitPoints();
+            beamVisualizer.VisualDraw(hitPoints);
         }        
     }
 
     /// Called every frame the object is rotated to update the points.
     private void UpdateHitPoints() {
-        rotationCheck = transform.rotation.eulerAngles;
         hitPoints.Clear();
         CalculateHitPoints(transform.position, transform.forward);
-        beamVisualizer.VisualDraw(hitPoints);
     }
 
     /// Cast a ray from the start position to the next object, if that object is able to reflect the beam will reflect to the next until it hits something else or hits nothing.
@@ -36,6 +37,9 @@ public class BeamCaster : MonoBehaviour
         RaycastHit hit;
         hitPoints.Add(startPosition);
         if(Physics.Raycast(startPosition, direction, out hit, MAX_DISTANCE) && hitPoints.Count < MAX_BOUNCE) {
+            objectTransforms.Add(hit.collider.gameObject.transform);
+            objectRotations.Add(hit.collider.gameObject.transform.rotation);
+            
             if(interactable != hit.collider.gameObject && hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable")) {
                 interactable = hit.collider.gameObject;
                 interactable.GetComponent<Interactable>()?.OnBeamHit();
@@ -51,5 +55,20 @@ public class BeamCaster : MonoBehaviour
         else {
             hitPoints.Add(startPosition + direction * MAX_DISTANCE);
         }           
+    }
+
+    /// Checks if an object is rotated.
+    private bool RotationCheck() {
+        bool rotationCheck = false;
+        if(currentRotation != transform.rotation) {
+            rotationCheck = true;
+        }
+        for(int i = 0; i < objectRotations.Count; i ++) {
+            if(objectRotations[i] != objectTransforms[i].rotation) {
+                rotationCheck = true;
+                print("rotated");
+            }
+        }
+        return rotationCheck;
     }
 }
