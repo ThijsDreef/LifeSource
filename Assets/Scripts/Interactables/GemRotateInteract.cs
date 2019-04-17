@@ -8,7 +8,7 @@ public class GemRotateInteract : RotateInteractor {
     // StartCoroutine(Interacting());
   }
   protected override IEnumerator Interacting() {
-    int deltaFactor = 100;
+    int deltaFactor = 300;
     float old = Input.acceleration.x * deltaFactor; 
     while (true) {
       this.transform.Rotate(new Vector3(0, (Input.acceleration.x * deltaFactor) - old, 0));
