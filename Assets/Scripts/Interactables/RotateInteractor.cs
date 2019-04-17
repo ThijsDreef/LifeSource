@@ -9,15 +9,15 @@ public class RotateInteractor : Interactable {
   protected override void BeamInteract() { }
 
   protected override void HoldInteract() {
-    // PlayerController.RequestMove(this.transform.position, this.RequestRotate);
+    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
   }
 
   protected override void Interact() {
-    // PlayerController.RequestMove(this.transform.position, this.RequestRotate);
+    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
   }
 
   private void RequestRotate() {
-    // PlayerController.RequestInteract(this);
+    PlayerController.Instance.RequestInteract(this);
   }
 
   /// starts interacting coroutine
@@ -31,7 +31,7 @@ public class RotateInteractor : Interactable {
   }
 
   /// should be overwritten to implement some interact functionality over multiple frames
-  public virtual IEnumerator Interacting() {
+  protected virtual IEnumerator Interacting() {
     while (true) {
       yield return null;
     }
