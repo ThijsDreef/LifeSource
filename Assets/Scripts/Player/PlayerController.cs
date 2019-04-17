@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
   private OnStateAction[] actions = new OnStateAction[(int)PlayerControllerState.LENGTH];
   private bool TargetReached;
   private Coroutine currentRoutine = null;
+  private Interactable interactable;
 
   private void Awake() {
     if (Instance == null) {
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour {
 
   private void Start() {
     navMeshAgent = this.GetComponent<NavMeshAgent>();
+    actions[(int)PlayerControllerState.INTERACTING].onEnd += StopInteract;
   }
 
   public void RequestMove(Vector3 TargetDest) {
@@ -39,6 +41,16 @@ public class PlayerController : MonoBehaviour {
 
   public void RequestStartCallback(PlayerControllerState state, Action callback) {
     actions[(int)state].onStart += callback;
+  }
+
+  public void RequestInteract(Interactable interactObject) {
+    interactObject.StartInteract();
+    interactable = interactObject;
+    SetState(PlayerControllerState.INTERACTING);
+  }
+
+  private void StopInteract() {
+    interactable.StopInteract();
   }
 
   private void SetState(PlayerControllerState state) {
