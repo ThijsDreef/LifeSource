@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 345385cb0a62bc543a6891f5eb96094d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: fern_retopo_group7_polySurface1
+    100002: fern_retopo_group8_polySurface1
+    100004: flowerhead_petal10_polySurface1
+    100006: flowerhead_petal11_polySurface1
+    100008: flowerhead_petal12_polySurface1
+    100010: flowerhead_petal13_polySurface1
+    100012: flowerhead_petal14_polySurface1
+    100014: flowerhead_petal9_polySurface1
+    100016: group4_pHelix7
+    100018: group4_pHelix9
+    100020: pCylinder2_group4
+    100022: pCylinder6_polySurface1
+    100024: //RootNode
+    400000: fern_retopo_group7_polySurface1
+    400002: fern_retopo_group8_polySurface1
+    400004: flowerhead_petal10_polySurface1
+    400006: flowerhead_petal11_polySurface1
+    400008: flowerhead_petal12_polySurface1
+    400010: flowerhead_petal13_polySurface1
+    400012: flowerhead_petal14_polySurface1
+    400014: flowerhead_petal9_polySurface1
+    400016: group4_pHelix7
+    400018: group4_pHelix9
+    400020: pCylinder2_group4
+    400022: pCylinder6_polySurface1
+    400024: //RootNode
+    2100000: fern_retopo_group7_polySurface1Mat
+    2100002: fern_retopo_group8_polySurface1Mat
+    2100004: flowerhead_petal10_polySurface1Mat
+    2100006: flowerhead_petal11_polySurface1Mat
+    2100008: flowerhead_petal12_polySurface1Mat
+    2100010: flowerhead_petal13_polySurface1Mat
+    2100012: flowerhead_petal14_polySurface1Mat
+    2100014: flowerhead_petal9_polySurface1Mat
+    2100016: group4_pHelix7Mat
+    2100018: group4_pHelix9Mat
+    2100020: pCylinder2_group4Mat
+    2100022: pCylinder6_polySurface1Mat
+    2300000: fern_retopo_group7_polySurface1
+    2300002: fern_retopo_group8_polySurface1
+    2300004: flowerhead_petal10_polySurface1
+    2300006: flowerhead_petal11_polySurface1
+    2300008: flowerhead_petal12_polySurface1
+    2300010: flowerhead_petal13_polySurface1
+    2300012: flowerhead_petal14_polySurface1
+    2300014: flowerhead_petal9_polySurface1
+    2300016: group4_pHelix7
+    2300018: group4_pHelix9
+    2300020: pCylinder2_group4
+    2300022: pCylinder6_polySurface1
+    3300000: fern_retopo_group7_polySurface1
+    3300002: fern_retopo_group8_polySurface1
+    3300004: flowerhead_petal10_polySurface1
+    3300006: flowerhead_petal11_polySurface1
+    3300008: flowerhead_petal12_polySurface1
+    3300010: flowerhead_petal13_polySurface1
+    3300012: flowerhead_petal14_polySurface1
+    3300014: flowerhead_petal9_polySurface1
+    3300016: group4_pHelix7
+    3300018: group4_pHelix9
+    3300020: pCylinder2_group4
+    3300022: pCylinder6_polySurface1
+    4300000: fern_retopo_group7_polySurface1
+    4300002: fern_retopo_group8_polySurface1
+    4300004: flowerhead_petal10_polySurface1
+    4300006: flowerhead_petal11_polySurface1
+    4300008: flowerhead_petal12_polySurface1
+    4300010: flowerhead_petal13_polySurface1
+    4300012: flowerhead_petal14_polySurface1
+    4300014: flowerhead_petal9_polySurface1
+    4300016: group4_pHelix7
+    4300018: group4_pHelix9
+    4300020: pCylinder2_group4
+    4300022: pCylinder6_polySurface1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
