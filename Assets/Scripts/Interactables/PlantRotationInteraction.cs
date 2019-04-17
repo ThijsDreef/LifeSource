@@ -11,7 +11,7 @@ public class PlantRotationInteraction : RotateInteractor {
     }
     
     /// Points the direction to where the player looks with the camera. 
-    public override IEnumerator Interacting () {
+    protected override IEnumerator Interacting () {
         RaycastHit hit;
         while(true) {
             yield return new WaitForEndOfFrame();
