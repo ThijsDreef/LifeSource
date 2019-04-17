@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour {
         TargetReached = true;
       }
     } while (!TargetReached);
-    CallBack?.Invoke();
     SetState(PlayerControllerState.IDLE);
+    CallBack?.Invoke();
   }
 }
