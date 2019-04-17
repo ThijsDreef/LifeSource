@@ -1,6 +1,7 @@
 {
     "files.exclude":
     {
+        "**/NavMeshComponents":true,
         "**/.DS_Store":true,
         "**/.git":true,
         "**/.gitignore":false,
