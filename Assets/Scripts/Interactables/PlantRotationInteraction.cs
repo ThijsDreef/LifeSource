@@ -12,8 +12,8 @@ public class PlantRotationInteraction : RotateInteractor {
     
     /// Points the direction to where the player looks with the camera. 
     public override IEnumerator Interacting () {
+        RaycastHit hit;
         while(true) {
-            RaycastHit hit;
             yield return new WaitForEndOfFrame();
             if(Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit)) {
                 transform.LookAt(hit.point);
