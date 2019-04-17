@@ -7,7 +7,7 @@ public class WalkInteractable : Interactable {
   protected override void BeamInteract() { }
   /// HoldInteract is used to request the PlayerController to move towards the touched point
   protected override void HoldInteract() {
-    // PlayerController.Instance.RequestMove(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+    Interact();
   }
 
   /// Interact is used to request the PlayerController to move towards the touched point

@@ -3,21 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationController : MonoBehaviour {
-    private AnimationController animController;
-    
-    private void Start() {
-        
-    }
+  [SerializeField]
+  private Animator animator;
 
-    private void IdleAnim(){
+  private void Start() {
+    PlayerController.Instance.RequestStartCallback(PlayerControllerState.IDLE, IdleAnim);
+    PlayerController.Instance.RequestStartCallback(PlayerControllerState.WALKING, WalkAnim);
+  }
 
-    }
+  private void IdleAnim() {
+    animator.SetBool("Walking", false);
+    animator.SetBool("Idle", true);
+  }
 
-    private void WalkAnim(){
+  private void WalkAnim() {
+    animator.SetBool("Walking", true);
+    animator.SetBool("Idle", false);
+  }
 
-    }
+  private void InterActAnim() {
 
-    private void InterActAnim(){
-        
-    }
+  }
 }
