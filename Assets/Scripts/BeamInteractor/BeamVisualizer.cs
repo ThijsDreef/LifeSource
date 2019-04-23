@@ -13,8 +13,6 @@ public class BeamVisualizer : MonoBehaviour
 
     public void VisualDraw(List<Vector3> hits) {
         lineRenderer.positionCount = hits.Count;
-        for(int i = 0; i < hits.Count; i++) {
-            lineRenderer.SetPosition(i, hits[i]);
-        }
+        lineRenderer.SetPositions(hits.ToArray());
     }
 }

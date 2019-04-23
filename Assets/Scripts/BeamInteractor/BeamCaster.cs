@@ -11,7 +11,7 @@ public class BeamCaster : MonoBehaviour
     private GameObject interactable;
     private Quaternion currentRotation;
     private BeamVisualizer beamVisualizer;
-    private const int MAX_DISTANCE = 25;
+    private const int MAX_DISTANCE = 150;
     private const int MAX_BOUNCE = 5;
 
     private void Awake() {
@@ -29,6 +29,8 @@ public class BeamCaster : MonoBehaviour
     /// Called every frame the object is rotated to update the points.
     private void UpdateHitPoints() {
         hitPoints.Clear();
+        objectTransforms.Clear();
+        objectRotations.Clear();
         CalculateHitPoints(transform.position, transform.forward);
     }
 
