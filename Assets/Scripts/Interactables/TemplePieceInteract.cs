@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectableInteract : Interactable {
+public class TemplePieceInteract : Interactable {
   [SerializeField] 
-  Counter counter;
+  TempleInteract temple = null;
   [SerializeField]
   float destroyDelay = 0;
   /// could be used to start some form of VFX 
@@ -20,12 +20,12 @@ public class CollectableInteract : Interactable {
 
   /// requests player to move towards this gameobject and execute OnPickUp at arrival
   private void RequestPickUp() {
-    // PlayerController.Instance.RequestMove(this.transform.position, this.OnPickUp);
+    PlayerController.Instance.RequestMove(this.transform.position, this.OnPickUp);
   }
 
   /// destroys this object and decrements the counter 
   private void OnPickUp() {
-    counter.count--;
-    Destroy(this, destroyDelay);
+    if (temple != null) temple.addPiece();
+    Destroy(this.gameObject, destroyDelay);
   }
 }
