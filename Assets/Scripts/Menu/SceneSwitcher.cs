@@ -7,7 +7,8 @@ public class SceneSwitcher : MonoBehaviour {
 
     /// Loads the given scene.
     public void LoadScene(int sceneIndex) {
-        if(sceneIndex < SceneManager.sceneCount) SceneManager.LoadScene(sceneIndex);
+        print(SceneManager.sceneCount);
+        if(sceneIndex <= SceneManager.sceneCount) SceneManager.LoadScene(sceneIndex);
     }
 
     /// Stops the aplication.
