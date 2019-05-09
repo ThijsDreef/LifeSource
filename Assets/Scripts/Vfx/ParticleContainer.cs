@@ -6,16 +6,21 @@ public class ParticleContainer : MonoBehaviour {
 	public static ParticleContainer Instance;
 
 	[SerializeField]
-	private ParticleSystem walkParticle;
+	private GameObject walkParticle;
 	[SerializeField]
-	private ParticleSystem interactParticle;
+	private GameObject interactParticle;
 
-
+	private ParticleSystem[] walkParticles;
+	private ParticleSystem[] interactParticles;
 	private void Start() {
 		if (Instance != null) {
 			Destroy(this);
 			return;
 		}
+
+		walkParticles = walkParticle.GetComponentsInChildren<ParticleSystem>();
+		interactParticles = interactParticle.GetComponentsInChildren<ParticleSystem>();
+
 		Instance = this;
 	}
 
@@ -26,12 +31,14 @@ public class ParticleContainer : MonoBehaviour {
 
 	/// emits the particle for the walk
 	public void EmitWalkParticle(Vector3 position) {
-		EmitParticle(walkParticle, position);
+		for (int i = 0; i < walkParticles.Length; i++)
+			EmitParticle(walkParticles[i], position);
 	}
 
 	/// emits the particle for interacting
 	public void EmitInteractParticle(Vector3 position) {
-		EmitParticle(interactParticle, position);
+		for (int i = 0; i < interactParticles.Length; i++)
+			EmitParticle(interactParticles[i], position);
 	}
 
 }
