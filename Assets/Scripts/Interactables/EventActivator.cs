@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 public class EventActivator : Interactable {
   [SerializeField]
-  private UnityEvent onInteract;
+  protected UnityEvent onInteract;
   [SerializeField]
-  private UnityEvent onHoldInteract;
+  protected UnityEvent onHoldInteract;
   [SerializeField]
-  private UnityEvent onBeamInteract;
+  protected UnityEvent onBeamInteract;
   /// calls the onBeamInteract callback
   protected override void BeamInteract() {
     onBeamInteract?.Invoke();
