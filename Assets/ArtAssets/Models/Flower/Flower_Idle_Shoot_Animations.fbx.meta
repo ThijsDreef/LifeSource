@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 74ff67d25feaac848ba27b6f63264490
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bloem_Rig_0021:blendShapes01
+    100002: Bloem_Rig_0021:bn_Leaf_01_jnt
+    100004: Bloem_Rig_0021:bn_Leaf_01_jnt1
+    100006: Bloem_Rig_0021:bn_Leaf_01_jnt2
+    100008: Bloem_Rig_0021:bn_Leaf_02_jnt
+    100010: Bloem_Rig_0021:bn_Leaf_02_jnt1
+    100012: Bloem_Rig_0021:bn_Leaf_02_jnt2
+    100014: Bloem_Rig_0021:bn_Leaf_03_jnt
+    100016: Bloem_Rig_0021:bn_Leaf_03_jnt1
+    100018: Bloem_Rig_0021:bn_Leaf_03_jnt2
+    100020: Bloem_Rig_0021:bn_Leaf_04_jnt
+    100022: Bloem_Rig_0021:bn_Leaf_04_jnt1
+    100024: Bloem_Rig_0021:bn_Leaf_04_jnt2
+    100026: Bloem_Rig_0021:bn_Leaf_05_jnt
+    100028: Bloem_Rig_0021:bn_Leaf_05_jnt1
+    100030: Bloem_Rig_0021:bn_Leaf_05_jnt2
+    100032: Bloem_Rig_0021:bn_Leaf_06_jnt
+    100034: Bloem_Rig_0021:bn_Leaf_06_jnt1
+    100036: Bloem_Rig_0021:bn_Leaf_06_jnt2
+    100038: Bloem_Rig_0021:bn_stem_00_jnt
+    100040: Bloem_Rig_0021:bn_Stem_01_jnt
+    100042: Bloem_Rig_0021:bn_Stem_02_jnt
+    100044: Bloem_Rig_0021:bn_Stem_03_jnt
+    100046: Bloem_Rig_0021:bn_Stem_04_jnt
+    100048: Bloem_Rig_0021:bn_Stem_05_jnt
+    100050: Bloem_Rig_0021:bn_Stem_06_jnt
+    100052: Bloem_Rig_0021:bn_Stem_07_jnt
+    100054: Bloem_Rig_0021:bn_Stem_08_jnt
+    100056: Bloem_Rig_0021:bn_Stem_09_jnt
+    100058: Bloem_Rig_0021:bn_Stem_10_jnt
+    100060: Bloem_Rig_0021:bn_Twirl_jnt
+    100062: Bloem_Rig_0021:Bobbol
+    100064: Bloem_Rig_0021:controlObjects01
+    100066: Bloem_Rig_0021:extraNodes01
+    100068: Bloem_Rig_0021:Flower_Bobbol_cntrl
+    100070: Bloem_Rig_0021:Flower_Bobbol_cntrl_GRP
+    100072: Bloem_Rig_0021:Flower_bot_Little_leafs
+    100074: Bloem_Rig_0021:Flower_Head_cntrl
+    100076: Bloem_Rig_0021:Flower_Head_cntrl_GRP
+    100078: Bloem_Rig_0021:Flower_Leaf_01_cntrl
+    100080: Bloem_Rig_0021:Flower_Leaf_01_cntrl1
+    100082: Bloem_Rig_0021:Flower_Leaf_01_cntrl2
+    100084: Bloem_Rig_0021:Flower_Leaf_02_cntrl
+    100086: Bloem_Rig_0021:Flower_Leaf_02_cntrl1
+    100088: Bloem_Rig_0021:Flower_Leaf_02_cntrl2
+    100090: Bloem_Rig_0021:Flower_Leaf_03_cntrl
+    100092: Bloem_Rig_0021:Flower_Leaf_03_cntrl1
+    100094: Bloem_Rig_0021:Flower_Leaf_03_cntrl2
+    100096: Bloem_Rig_0021:Flower_Leaf_04_cntrl
+    100098: Bloem_Rig_0021:Flower_Leaf_04_cntrl1
+    100100: Bloem_Rig_0021:Flower_Leaf_04_cntrl2
+    100102: Bloem_Rig_0021:Flower_Leaf_05_cntrl
+    100104: Bloem_Rig_0021:Flower_Leaf_05_cntrl1
+    100106: Bloem_Rig_0021:Flower_Leaf_05_cntrl2
+    100108: Bloem_Rig_0021:Flower_Leaf_06_cntrl
+    100110: Bloem_Rig_0021:Flower_Leaf_06_cntrl1
+    100112: Bloem_Rig_0021:Flower_Leaf_06_cntrl2
+    100114: Bloem_Rig_0021:Flower_top_Little_leafs
+    100116: Bloem_Rig_0021:Flower_Twirl_cntrl
+    100118: Bloem_Rig_0021:Flower_Twirl_cntrl 1
+    100120: Bloem_Rig_0021:globalMove01
+    100122: Bloem_Rig_0021:iks01
+    100124: Bloem_Rig_0021:joints01
+    100126: Bloem_Rig_0021:Leaf_01
+    100128: Bloem_Rig_0021:Leaf_02
+    100130: Bloem_Rig_0021:Leaf_03
+    100132: Bloem_Rig_0021:Leaf_04
+    100134: Bloem_Rig_0021:Leaf_05
+    100136: Bloem_Rig_0021:Leaf_06
+    100138: Bloem_Rig_0021:Master_cntrl
+    100140: Bloem_Rig_0021:Model_01
+    100142: Bloem_Rig_0021:nurbsCircle1
+    100144: Bloem_Rig_0021:nurbsCircle1 1
+    100146: Bloem_Rig_0021:nurbsCircle1 10
+    100148: Bloem_Rig_0021:nurbsCircle1 11
+    100150: Bloem_Rig_0021:nurbsCircle1 12
+    100152: Bloem_Rig_0021:nurbsCircle1 13
+    100154: Bloem_Rig_0021:nurbsCircle1 14
+    100156: Bloem_Rig_0021:nurbsCircle1 15
+    100158: Bloem_Rig_0021:nurbsCircle1 16
+    100160: Bloem_Rig_0021:nurbsCircle1 2
+    100162: Bloem_Rig_0021:nurbsCircle1 3
+    100164: Bloem_Rig_0021:nurbsCircle1 4
+    100166: Bloem_Rig_0021:nurbsCircle1 5
+    100168: Bloem_Rig_0021:nurbsCircle1 6
+    100170: Bloem_Rig_0021:nurbsCircle1 7
+    100172: Bloem_Rig_0021:nurbsCircle1 8
+    100174: Bloem_Rig_0021:nurbsCircle1 9
+    100176: Bloem_Rig_0021:nurbsCircle2
+    100178: Bloem_Rig_0021:Stem
+    100180: Bloem_Rig_0021:Stem_IKhandle
+    100182: Bloem_Rig_0021:Stem_start_cntrl
+    100184: Bloem_Rig_0021:Stem_start_cntrl_GRP
+    100186: Bloem_Rig_0021:to_transform01
+    100188: Bloem_Rig_0021:trns_toHide01
+    100190: Bloem_Rig_0021:trns_toShow01
+    100192: Bloem_Rig_0021:Twirl
+    100194: Bloem_Rig_0021:xtra_toHide01
+    100196: Bloem_Rig_0021:xtra_toShow01
+    100198: //RootNode
+    400000: Bloem_Rig_0021:blendShapes01
+    400002: Bloem_Rig_0021:bn_Leaf_01_jnt
+    400004: Bloem_Rig_0021:bn_Leaf_01_jnt1
+    400006: Bloem_Rig_0021:bn_Leaf_01_jnt2
+    400008: Bloem_Rig_0021:bn_Leaf_02_jnt
+    400010: Bloem_Rig_0021:bn_Leaf_02_jnt1
+    400012: Bloem_Rig_0021:bn_Leaf_02_jnt2
+    400014: Bloem_Rig_0021:bn_Leaf_03_jnt
+    400016: Bloem_Rig_0021:bn_Leaf_03_jnt1
+    400018: Bloem_Rig_0021:bn_Leaf_03_jnt2
+    400020: Bloem_Rig_0021:bn_Leaf_04_jnt
+    400022: Bloem_Rig_0021:bn_Leaf_04_jnt1
+    400024: Bloem_Rig_0021:bn_Leaf_04_jnt2
+    400026: Bloem_Rig_0021:bn_Leaf_05_jnt
+    400028: Bloem_Rig_0021:bn_Leaf_05_jnt1
+    400030: Bloem_Rig_0021:bn_Leaf_05_jnt2
+    400032: Bloem_Rig_0021:bn_Leaf_06_jnt
+    400034: Bloem_Rig_0021:bn_Leaf_06_jnt1
+    400036: Bloem_Rig_0021:bn_Leaf_06_jnt2
+    400038: Bloem_Rig_0021:bn_stem_00_jnt
+    400040: Bloem_Rig_0021:bn_Stem_01_jnt
+    400042: Bloem_Rig_0021:bn_Stem_02_jnt
+    400044: Bloem_Rig_0021:bn_Stem_03_jnt
+    400046: Bloem_Rig_0021:bn_Stem_04_jnt
+    400048: Bloem_Rig_0021:bn_Stem_05_jnt
+    400050: Bloem_Rig_0021:bn_Stem_06_jnt
+    400052: Bloem_Rig_0021:bn_Stem_07_jnt
+    400054: Bloem_Rig_0021:bn_Stem_08_jnt
+    400056: Bloem_Rig_0021:bn_Stem_09_jnt
+    400058: Bloem_Rig_0021:bn_Stem_10_jnt
+    400060: Bloem_Rig_0021:bn_Twirl_jnt
+    400062: Bloem_Rig_0021:Bobbol
+    400064: Bloem_Rig_0021:controlObjects01
+    400066: Bloem_Rig_0021:extraNodes01
+    400068: Bloem_Rig_0021:Flower_Bobbol_cntrl
+    400070: Bloem_Rig_0021:Flower_Bobbol_cntrl_GRP
+    400072: Bloem_Rig_0021:Flower_bot_Little_leafs
+    400074: Bloem_Rig_0021:Flower_Head_cntrl
+    400076: Bloem_Rig_0021:Flower_Head_cntrl_GRP
+    400078: Bloem_Rig_0021:Flower_Leaf_01_cntrl
+    400080: Bloem_Rig_0021:Flower_Leaf_01_cntrl1
+    400082: Bloem_Rig_0021:Flower_Leaf_01_cntrl2
+    400084: Bloem_Rig_0021:Flower_Leaf_02_cntrl
+    400086: Bloem_Rig_0021:Flower_Leaf_02_cntrl1
+    400088: Bloem_Rig_0021:Flower_Leaf_02_cntrl2
+    400090: Bloem_Rig_0021:Flower_Leaf_03_cntrl
+    400092: Bloem_Rig_0021:Flower_Leaf_03_cntrl1
+    400094: Bloem_Rig_0021:Flower_Leaf_03_cntrl2
+    400096: Bloem_Rig_0021:Flower_Leaf_04_cntrl
+    400098: Bloem_Rig_0021:Flower_Leaf_04_cntrl1
+    400100: Bloem_Rig_0021:Flower_Leaf_04_cntrl2
+    400102: Bloem_Rig_0021:Flower_Leaf_05_cntrl
+    400104: Bloem_Rig_0021:Flower_Leaf_05_cntrl1
+    400106: Bloem_Rig_0021:Flower_Leaf_05_cntrl2
+    400108: Bloem_Rig_0021:Flower_Leaf_06_cntrl
+    400110: Bloem_Rig_0021:Flower_Leaf_06_cntrl1
+    400112: Bloem_Rig_0021:Flower_Leaf_06_cntrl2
+    400114: Bloem_Rig_0021:Flower_top_Little_leafs
+    400116: Bloem_Rig_0021:Flower_Twirl_cntrl
+    400118: Bloem_Rig_0021:Flower_Twirl_cntrl 1
+    400120: Bloem_Rig_0021:globalMove01
+    400122: Bloem_Rig_0021:iks01
+    400124: Bloem_Rig_0021:joints01
+    400126: Bloem_Rig_0021:Leaf_01
+    400128: Bloem_Rig_0021:Leaf_02
+    400130: Bloem_Rig_0021:Leaf_03
+    400132: Bloem_Rig_0021:Leaf_04
+    400134: Bloem_Rig_0021:Leaf_05
+    400136: Bloem_Rig_0021:Leaf_06
+    400138: Bloem_Rig_0021:Master_cntrl
+    400140: Bloem_Rig_0021:Model_01
+    400142: Bloem_Rig_0021:nurbsCircle1
+    400144: Bloem_Rig_0021:nurbsCircle1 1
+    400146: Bloem_Rig_0021:nurbsCircle1 10
+    400148: Bloem_Rig_0021:nurbsCircle1 11
+    400150: Bloem_Rig_0021:nurbsCircle1 12
+    400152: Bloem_Rig_0021:nurbsCircle1 13
+    400154: Bloem_Rig_0021:nurbsCircle1 14
+    400156: Bloem_Rig_0021:nurbsCircle1 15
+    400158: Bloem_Rig_0021:nurbsCircle1 16
+    400160: Bloem_Rig_0021:nurbsCircle1 2
+    400162: Bloem_Rig_0021:nurbsCircle1 3
+    400164: Bloem_Rig_0021:nurbsCircle1 4
+    400166: Bloem_Rig_0021:nurbsCircle1 5
+    400168: Bloem_Rig_0021:nurbsCircle1 6
+    400170: Bloem_Rig_0021:nurbsCircle1 7
+    400172: Bloem_Rig_0021:nurbsCircle1 8
+    400174: Bloem_Rig_0021:nurbsCircle1 9
+    400176: Bloem_Rig_0021:nurbsCircle2
+    400178: Bloem_Rig_0021:Stem
+    400180: Bloem_Rig_0021:Stem_IKhandle
+    400182: Bloem_Rig_0021:Stem_start_cntrl
+    400184: Bloem_Rig_0021:Stem_start_cntrl_GRP
+    400186: Bloem_Rig_0021:to_transform01
+    400188: Bloem_Rig_0021:trns_toHide01
+    400190: Bloem_Rig_0021:trns_toShow01
+    400192: Bloem_Rig_0021:Twirl
+    400194: Bloem_Rig_0021:xtra_toHide01
+    400196: Bloem_Rig_0021:xtra_toShow01
+    400198: //RootNode
+    2100000: lambert1
+    4300000: Bloem_Rig_0021:Twirl
+    4300002: Bloem_Rig_0021:Flower_top_Little_leafs
+    4300004: Bloem_Rig_0021:Stem
+    4300006: Bloem_Rig_0021:Leaf_04
+    4300008: Bloem_Rig_0021:Leaf_02
+    4300010: Bloem_Rig_0021:Leaf_06
+    4300012: Bloem_Rig_0021:Bobbol
+    4300014: Bloem_Rig_0021:Leaf_03
+    4300016: Bloem_Rig_0021:Leaf_05
+    4300018: Bloem_Rig_0021:Leaf_01
+    4300020: Bloem_Rig_0021:Flower_bot_Little_leafs
+    7400000: Idle
+    7400002: Shoot_Start
+    7400004: Shoot_Idle
+    7400006: Shoot_End
+    9500000: //RootNode
+    13700000: Bloem_Rig_0021:Bobbol
+    13700002: Bloem_Rig_0021:Flower_bot_Little_leafs
+    13700004: Bloem_Rig_0021:Flower_top_Little_leafs
+    13700006: Bloem_Rig_0021:Leaf_01
+    13700008: Bloem_Rig_0021:Leaf_02
+    13700010: Bloem_Rig_0021:Leaf_03
+    13700012: Bloem_Rig_0021:Leaf_04
+    13700014: Bloem_Rig_0021:Leaf_05
+    13700016: Bloem_Rig_0021:Leaf_06
+    13700018: Bloem_Rig_0021:Stem
+    13700020: Bloem_Rig_0021:Twirl
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
