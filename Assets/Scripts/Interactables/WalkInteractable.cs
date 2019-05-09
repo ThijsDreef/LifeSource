@@ -19,5 +19,6 @@ public class WalkInteractable : Interactable {
       Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
     #endif
     if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 500)) PlayerController.Instance.RequestMove(hit.point);
+    ParticleContainer.Instance.EmitWalkParticle(hit.point);
   }
 }
