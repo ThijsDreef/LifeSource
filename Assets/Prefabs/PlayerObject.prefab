@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 6971899559013536131}
   - component: {fileID: 7511162288870460445}
   - component: {fileID: 1033825424}
-  - component: {fileID: 7011763844702763632}
-  - component: {fileID: 8115406151688164842}
   - component: {fileID: 915276756935247576}
   m_Layer: 9
   m_Name: PlayerObject
@@ -103,14 +101,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6125623d465d9a141841a11a43f463bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 100
+  movingTurnSpeed: 360
+  stationaryTurnSpeed: 180
+  jumpPower: 6
+  gravityMultiplier: 2
+  runCycleLegOffset: 0.2
+  moveSpeedMultiplier: 1
+  animSpeedMultiplier: 1
+  groundCheckDistance: 100
 --- !u!114 &1033825424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,34 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 0}
   currentPlayerState: 0
---- !u!114 &7011763844702763632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923122464919873269}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aece7714c5716f4db4f755fcdbbcac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
---- !u!114 &8115406151688164842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923122464919873269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5f94912f1432548b9688509f75bd60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  agent: {fileID: 0}
-  character: {fileID: 0}
 --- !u!95 &915276756935247576
 Animator:
   serializedVersion: 3

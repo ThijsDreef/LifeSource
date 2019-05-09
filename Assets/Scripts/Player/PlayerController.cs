@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
   private bool TargetReached;
   private Coroutine currentRoutine = null;
   private Interactable interactable;
+  ThirdPersonCharacter character;
 
   private void Awake() {
     if (Instance == null) {
@@ -27,8 +28,16 @@ public class PlayerController : MonoBehaviour {
   }
 
   private void Start() {
+    character = GetComponent<ThirdPersonCharacter>();
     navMeshAgent = this.GetComponent<NavMeshAgent>();
+    navMeshAgent.updateRotation = false;
     actions[(int)PlayerControllerState.INTERACTING].onEnd += StopInteract;
+  }
+
+  private void Update() {
+    if(TargetReached || navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance){
+      character.Move(Vector3.zero, false ,false);
+    }
   }
 
   public void RequestMove(Vector3 TargetDest) {
@@ -72,7 +81,8 @@ public class PlayerController : MonoBehaviour {
       if (navMeshAgent.pathPending) {
         yield return null;
       }
-      if (navMeshAgent.remainingDistance >= navMeshAgent.stoppingDistance) {
+      if (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance) {
+        character.Move(navMeshAgent.desiredVelocity, false, false);
         yield return null;
       }
       if (navMeshAgent.hasPath) {
