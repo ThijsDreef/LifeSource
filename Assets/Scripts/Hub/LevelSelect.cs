@@ -6,8 +6,8 @@ public class LevelSelect : MonoBehaviour
 {
     public int levelIndex;
 
+    /// Select the level with the given index.
     public void Select() {
-        print(levelIndex);
         LevelHandler.Instance.ChangeLevel(levelIndex);
     }
 }

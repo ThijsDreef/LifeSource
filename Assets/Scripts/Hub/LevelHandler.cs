@@ -22,6 +22,7 @@ public class LevelHandler : MonoBehaviour {
         }
     }
 
+    /// Disable all levels and then enables the given level if it is unlockd.
     public void ChangeLevel(int levelIndex) {
         if(unlockedLevels.Contains(levelIndex)) {
             for(int i = 0; i < levels.Count; i++) {
@@ -31,6 +32,7 @@ public class LevelHandler : MonoBehaviour {
         }
     }
 
+    /// Unlocks level witch kan then be played.
     public void UnlockLevel(int unlockIndex) {
         if(!unlockedLevels.Contains(unlockIndex)) {
             unlockedLevels[unlockIndex] = unlockIndex;
