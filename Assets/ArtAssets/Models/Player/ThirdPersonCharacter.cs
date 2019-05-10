@@ -36,6 +36,12 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	private CapsuleCollider capsuleCollider;
 	private bool crouching;
 
+	private Vector3 oldPosition;
+
+
+	[SerializeField]
+	private Transform ImageTarget;
+
 
 	private void Start() {
 		animator = GetComponent<Animator>();
@@ -45,6 +51,11 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		capsuleCenter = capsuleCollider.center;
 		playerRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		startOriginGroundCheckDistance = groundCheckDistance;
+		oldPosition = ImageTarget.transform.position;
+	}
+
+	private void Update() {
+		Debug.Log(animator.applyRootMotion);
 	}
 
 	/// moves the character based on root motion
@@ -60,7 +71,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		forwardAmount = move.z;
 
 		ApplyExtraTurnRotation();
-
+		
 		// control and velocity handling is different when grounded and airborne:
 		if (isGrounded) {
 			HandleGroundedMovement(crouch, jump);
@@ -169,11 +180,13 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	private void OnAnimatorMove() {
 		// we implement this function to override the default root motion.
 		// this allows us to modify the positional speed before it's applied.
+		Debug.Log("Animation moving");
 		if (isGrounded && Time.deltaTime > 0) {
 			Vector3 updatedVelocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
 			// we preserve the existing y part of the current velocity.
 			updatedVelocity.y = playerRigidbody.velocity.y;
 			playerRigidbody.velocity = updatedVelocity;
+
 		}
 	}
 
