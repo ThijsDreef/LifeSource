@@ -30,13 +30,15 @@ public class PlayerController : MonoBehaviour {
   private void Start() {
     character = GetComponent<ThirdPersonCharacter>();
     navMeshAgent = this.GetComponent<NavMeshAgent>();
-    navMeshAgent.updateRotation = false;
+    //navMeshAgent.updateRotation = false;
     actions[(int)PlayerControllerState.INTERACTING].onEnd += StopInteract;
   }
 
   private void Update() {
-    if(TargetReached || navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance){
+    if(navMeshAgent.hasPath){
+      if(TargetReached || navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance){
       character.Move(Vector3.zero, false ,false);
+     }
     }
   }
 
