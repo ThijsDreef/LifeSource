@@ -17,10 +17,13 @@ public class OverlayController : MonoBehaviour {
             Destroy(this);
         }
     }
+
+    /// Start obscuring the screen.
     public void StartOverlay() {
         overlayAnimator.SetBool("Overlay", true);
     }
 
+    /// Start removing the overlay.
     public void EndOverlay() {
         onEndOverlay?.Invoke();
         overlayAnimator.SetBool("Overlay", false);
