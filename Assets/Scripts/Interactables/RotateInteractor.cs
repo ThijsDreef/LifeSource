@@ -5,15 +5,20 @@ using UnityEngine;
 public class RotateInteractor : Interactable {
   private Coroutine interactCoroutine;
 
+  private void MoveToInteract() {
+		ParticleContainer.Instance.EmitInteractParticle(this.transform.position);
+    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
+  }
+
   /// should get a VFX effect on BeamInteract
   protected override void BeamInteract() { }
 
   protected override void HoldInteract() {
-    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
+    MoveToInteract();
   }
 
   protected override void Interact() {
-    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
+    MoveToInteract();
   }
 
   private void RequestRotate() {
