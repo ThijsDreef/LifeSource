@@ -7,6 +7,7 @@ public class LevelHandler : MonoBehaviour {
     public static LevelHandler Instance;
     public List<GameObject> levels = new List<GameObject>();
     public List<int> unlockedLevels = new List<int>();
+    private int currentLevelIndex;
 
     private void Awake() {
 
@@ -25,11 +26,18 @@ public class LevelHandler : MonoBehaviour {
     /// Disable all levels and then enables the given level if it is unlockd.
     public void ChangeLevel(int levelIndex) {
         if(unlockedLevels.Contains(levelIndex)) {
-            for(int i = 0; i < levels.Count; i++) {
-                levels[i].SetActive(false);
-            }
-            levels[levelIndex].SetActive(true);
+            currentLevelIndex = levelIndex;
+            OverlayController.Instance.onEndOverlay.AddListener(SetupLevel);
+            OverlayController.Instance.StartOverlay();
         }
+    }
+
+    private void SetupLevel() {
+        for(int i = 0; i < levels.Count; i++) {
+            levels[i].SetActive(false);
+        }
+        levels[currentLevelIndex].SetActive(true);
+        OverlayController.Instance.onEndOverlay.RemoveListener(SetupLevel);
     }
 
     /// Unlocks level witch kan then be played.
