@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: b1188c464a81edc47aa9bc0664f1201e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ArchWall
+    100002: Archway1
+    100004: Entrance
+    100006: Fence
+    100008: Floortile
+    100010: FooterCorner
+    100012: FooterStraight
+    100014: pCube28
+    100016: pCube29
+    100018: pPipe2
+    100020: //RootNode
+    100022: W
+    100024: Wall
+    100026: WallHorizontalConnector
+    400000: ArchWall
+    400002: Archway1
+    400004: Entrance
+    400006: Fence
+    400008: Floortile
+    400010: FooterCorner
+    400012: FooterStraight
+    400014: pCube28
+    400016: pCube29
+    400018: pPipe2
+    400020: //RootNode
+    400022: W
+    400024: Wall
+    400026: WallHorizontalConnector
+    2100000: lambert1
+    2300000: Archway1
+    2300002: Fence
+    2300004: Floortile
+    2300006: FooterCorner
+    2300008: FooterStraight
+    2300010: pCube28
+    2300012: pCube29
+    2300014: pPipe2
+    2300016: W
+    2300018: Wall
+    2300020: WallHorizontalConnector
+    3300000: Archway1
+    3300002: Fence
+    3300004: Floortile
+    3300006: FooterCorner
+    3300008: FooterStraight
+    3300010: pCube28
+    3300012: pCube29
+    3300014: pPipe2
+    3300016: W
+    3300018: Wall
+    3300020: WallHorizontalConnector
+    4300000: FooterStraight
+    4300002: pPipe2
+    4300004: W
+    4300006: FooterCorner
+    4300008: Wall
+    4300010: WallHorizontalConnector
+    4300012: pCube28
+    4300014: Archway1
+    4300016: pCube29
+    4300018: Floortile
+    4300020: Fence
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 32a920674d5834248997dc8f366763d6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
