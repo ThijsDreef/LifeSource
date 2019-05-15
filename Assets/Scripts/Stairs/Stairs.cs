@@ -10,10 +10,9 @@ public class Stairs : MonoBehaviour {
     
     private void Start() {
         stairs = GetComponentsInChildren<StairElement>();
-        EnableStairs();
     }
 
-    private void EnableStairs(){
+    public void EnableStairs(){
         StartCoroutine(StairRaise());
     }
 

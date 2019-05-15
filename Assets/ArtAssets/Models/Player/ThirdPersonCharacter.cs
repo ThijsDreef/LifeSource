@@ -124,10 +124,10 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// update the animator parameters
 		animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
 		animator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
-		animator.SetBool("Crouch", crouching);
+		//animator.SetBool("Crouch", crouching);
 		animator.SetBool("OnGround", isGrounded);
 		if (!isGrounded) {
-			animator.SetFloat("Jump", playerRigidbody.velocity.y);
+			//animator.SetFloat("Jump", playerRigidbody.velocity.y);
 		}
 
 		// calculate which leg is behind, so as to leave that leg trailing in the jump animation
