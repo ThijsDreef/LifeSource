@@ -26,7 +26,7 @@ public class ParticleContainer : MonoBehaviour {
 
 	private void EmitParticle(ParticleSystem system, Vector3 position) {
 		system.transform.position = position;
-		system.Emit(10);
+		system.Emit(1);
 	}
 
 	/// emits the particle for the walk
@@ -39,6 +39,12 @@ public class ParticleContainer : MonoBehaviour {
 	public void EmitInteractParticle(Vector3 position) {
 		for (int i = 0; i < interactParticles.Length; i++)
 			EmitParticle(interactParticles[i], position);
+	}
+
+	public void StopEmitInteractParticle() {
+		for (int i = 0; i < interactParticles.Length; i++) {
+			interactParticles[i].Stop();
+		}
 	}
 
 }

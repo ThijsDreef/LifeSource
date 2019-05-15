@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 public class PlantRotationInteraction : RotateInteractor {
+    [SerializeField]
+    private GameObject target;
     private Camera mainCamera;
     public Action shootStart;
     public Action shootStop;
@@ -24,7 +26,8 @@ public class PlantRotationInteraction : RotateInteractor {
         while(true) {
             yield return new WaitForEndOfFrame();
             if(Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit)) {
-                transform.LookAt(hit.point);
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit.point - this.transform.position), Time.deltaTime * 6);
+                target.transform.position = hit.point;
             }
         }
     }

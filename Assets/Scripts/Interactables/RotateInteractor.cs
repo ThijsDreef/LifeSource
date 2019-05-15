@@ -33,6 +33,7 @@ public class RotateInteractor : Interactable {
   /// stops interacting coroutine
   public override void StopInteract() {
     StopCoroutine(interactCoroutine);
+    ParticleContainer.Instance.StopEmitInteractParticle();
   }
 
   /// should be overwritten to implement some interact functionality over multiple frames
