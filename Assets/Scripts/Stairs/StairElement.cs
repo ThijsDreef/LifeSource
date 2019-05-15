@@ -16,20 +16,18 @@ public class StairElement : MonoBehaviour {
     private float raiseSpeed;
 
     private void Start() {
-        raiseSpeed = Random.Range(1f, 2f);
+        raiseSpeed = Random.Range(1.5f, 3f);
         endPos = new Vector3(transform.localPosition.x, endHieght, transform.localPosition.z);
         beginPos = new Vector3(transform.localPosition.x, beginHeight, transform.localPosition.z);
         this.transform.localPosition = beginPos;
-        RaiseStairElement();
     }
     
-    private void RaiseStairElement(){
+    public void RaiseStairElement(){
         StartCoroutine(Raise());
     }
 
     private IEnumerator Raise(){
-        yield return new WaitForSeconds(3f);
-        do{
+        do {
             transform.localPosition = Vector3.Lerp(transform.localPosition, endPos, raiseSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }while(this.transform.localPosition.y <= (endHieght - (endHieght/100)));
