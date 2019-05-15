@@ -11,8 +11,7 @@ public class GemRotateInteract : RotateInteractor {
     int deltaFactor = 300;
     float old = Input.acceleration.x * deltaFactor; 
     while (true) {
-      this.transform.Rotate(new Vector3(0, (Input.acceleration.x * deltaFactor) - old, 0));
-      old = Input.acceleration.x * deltaFactor;
+      this.transform.Rotate(new Vector3(0, 0.5f, 0));
       yield return null;
     }
   }

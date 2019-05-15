@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BeamVisualizer))]
-public class BeamCaster : MonoBehaviour
-{
+public class BeamCaster : MonoBehaviour {
+    [SerializeField] 
+    private Transform target;
+    [SerializeField]
+    private Vector3 offset;
     private List<Vector3> hitPoints = new List<Vector3>();
     private List<Transform> objectTransforms = new List<Transform>();
-    private List<Quaternion> objectRotations = new List<Quaternion>();
     private GameObject interactable;
-    private Quaternion currentRotation;
     private BeamVisualizer beamVisualizer;
     private const int MAX_DISTANCE = 150;
     private const int MAX_BOUNCE = 5;
@@ -18,9 +19,8 @@ public class BeamCaster : MonoBehaviour
         beamVisualizer = GetComponent<BeamVisualizer>();
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         if(RotationCheck()) {
-            currentRotation = transform.rotation;
             UpdateHitPoints();
             beamVisualizer.VisualDraw(hitPoints);
         }        
@@ -28,10 +28,13 @@ public class BeamCaster : MonoBehaviour
 
     /// Called every frame the object is rotated to update the points.
     private void UpdateHitPoints() {
+        transform.LookAt(target);
+
         hitPoints.Clear();
         objectTransforms.Clear();
-        objectRotations.Clear();
+        interactable = null;
         CalculateHitPoints(transform.position, transform.forward);
+        hitPoints[0] += offset;
     }
 
     /// Cast a ray from the start position to the next object, if that object is able to reflect the beam will reflect to the next until it hits something else or hits nothing.
@@ -40,9 +43,8 @@ public class BeamCaster : MonoBehaviour
         hitPoints.Add(startPosition);
         if(Physics.Raycast(startPosition, direction, out hit, MAX_DISTANCE) && hitPoints.Count < MAX_BOUNCE) {
             objectTransforms.Add(hit.collider.gameObject.transform);
-            objectRotations.Add(hit.collider.gameObject.transform.rotation);
             
-            if(interactable != hit.collider.gameObject && hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable")) {
+            if(interactable != hit.collider.gameObject && (hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable"))) {
                 interactable = hit.collider.gameObject;
                 interactable.GetComponent<Interactable>()?.OnBeamHit();
             }
@@ -51,7 +53,7 @@ public class BeamCaster : MonoBehaviour
                 CalculateHitPoints(hit.point, direction);
             }
             else {
-                hitPoints.Add(hit.transform.position);
+                hitPoints.Add(hit.point);
             }
         }
         else {
@@ -62,15 +64,12 @@ public class BeamCaster : MonoBehaviour
     /// Checks if an object is rotated.
     private bool RotationCheck() {
         bool rotationCheck = false;
-        if(currentRotation != transform.rotation) {
-            rotationCheck = true;
-        }
-        for(int i = 0; i < objectRotations.Count; i ++) {
-            if(objectRotations[i] != objectTransforms[i].rotation) {
+        for(int i = 0; i < objectTransforms.Count; i ++) {
+            if(objectTransforms[i].hasChanged) {
                 rotationCheck = true;
-                print("rotated");
+                break;
             }
         }
-        return rotationCheck;
+        return rotationCheck || transform.hasChanged;
     }
 }
