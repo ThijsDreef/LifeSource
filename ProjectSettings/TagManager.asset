@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Reflectable
   - Interactable
+  - Target
   layers:
   - Default
   - TransparentFX
