@@ -9,6 +9,8 @@ public class ParticleContainer : MonoBehaviour {
 	private GameObject walkParticle;
 	[SerializeField]
 	private GameObject interactParticle;
+	[SerializeField]
+	private GameObject crossHair;
 
 	private ParticleSystem[] walkParticles;
 	private ParticleSystem[] interactParticles;
@@ -45,6 +47,10 @@ public class ParticleContainer : MonoBehaviour {
 		for (int i = 0; i < interactParticles.Length; i++) {
 			interactParticles[i].Stop();
 		}
+	}
+
+	public Transform GetCrosshairTransform() {
+		return crossHair.transform;
 	}
 
 }

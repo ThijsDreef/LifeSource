@@ -7,10 +7,15 @@ public class LevelHandler : MonoBehaviour {
 
     public static LevelHandler Instance;
     public int levelCount;
-    public GameObject spawnPoint;
     private List<int> unlockedLevels = new List<int>();
     private int currentLevelIndex;
     private AsyncOperation loadScene;
+    [SerializeField]
+    int[] defaultUnlockedLevels = new int[1];
+
+    [SerializeField]
+    int defaultStartLevel = 0;
+    
 
     private void Start() {
 
@@ -25,10 +30,9 @@ public class LevelHandler : MonoBehaviour {
         for(int i = 0; i < levelCount; i++) {
             unlockedLevels.Add(PlayerPrefs.GetInt("UnlockState" + i));
         }
-        unlockedLevels[1] = 1;
-        unlockedLevels[2] = 2;
-        ChangeLevel(1);
-    }
+        for (int i = 0; i < defaultUnlockedLevels.Length; i++) unlockedLevels[defaultUnlockedLevels[i]] = defaultUnlockedLevels[i];
+        ChangeLevel(defaultStartLevel);
+    }   
 
     /// Disable all levels and then enables the given level if it is unlockd.
     public void ChangeLevel(int levelIndex) {
@@ -46,7 +50,6 @@ public class LevelHandler : MonoBehaviour {
 
     /// Activates the scene and removes the overlay.
     private void SetupLevel() {
-        spawnPoint.SetActive(false);
         loadScene.allowSceneActivation = true;
         OverlayController.Instance.onEndOverlay.RemoveListener(SetupLevel);
     }

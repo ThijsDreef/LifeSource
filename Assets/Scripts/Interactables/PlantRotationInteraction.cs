@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 public class PlantRotationInteraction : RotateInteractor {
-    [SerializeField]
     private GameObject target;
     private Camera mainCamera;
     public Action shootStart;
     public Action shootStop;
     private void Start() {
         mainCamera = Camera.main;
+        target = ParticleContainer.Instance.GetCrosshairTransform().gameObject;
+        target.SetActive(true);
     }
 
     public override void StartInteract() {

@@ -28,7 +28,7 @@ public class BeamCaster : MonoBehaviour {
 
     /// Called every frame the object is rotated to update the points.
     private void UpdateHitPoints() {
-        transform.LookAt(target);
+        transform.LookAt(ParticleContainer.Instance.GetCrosshairTransform());
 
         hitPoints.Clear();
         objectTransforms.Clear();
@@ -65,7 +65,7 @@ public class BeamCaster : MonoBehaviour {
     private bool RotationCheck() {
         bool rotationCheck = false;
         for(int i = 0; i < objectTransforms.Count; i ++) {
-            if(objectTransforms[i].hasChanged) {
+            if(objectTransforms[i] != null && objectTransforms[i].hasChanged) {
                 rotationCheck = true;
                 break;
             }

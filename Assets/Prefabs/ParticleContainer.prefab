@@ -4778,6 +4778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkParticle: {fileID: 6041637058715785226}
   interactParticle: {fileID: 531977125326151202}
+  crossHair: {fileID: 700492116973271989}
 --- !u!1 &2140505408464529853
 GameObject:
   m_ObjectHideFlags: 0
@@ -19048,6 +19049,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20639b5c4da7952488e6520c8fec1357, type: 3}
+--- !u!1 &700492116973271989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6188882961828188136, guid: 20639b5c4da7952488e6520c8fec1357,
+    type: 3}
+  m_PrefabInstance: {fileID: 6655178535144764509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &700492116973271988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6188882961828188137, guid: 20639b5c4da7952488e6520c8fec1357,

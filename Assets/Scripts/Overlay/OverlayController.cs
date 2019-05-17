@@ -7,6 +7,8 @@ public class OverlayController : MonoBehaviour {
 
     public static OverlayController Instance;
     public UnityEvent onEndOverlay;
+    public UnityEvent onStartOverlay;
+
     public Animator overlayAnimator;
 
     private void Awake() {
@@ -20,6 +22,7 @@ public class OverlayController : MonoBehaviour {
 
     /// Start obscuring the screen.
     public void StartOverlay() {
+        onStartOverlay?.Invoke();
         overlayAnimator.SetBool("Overlay", true);
     }
 
