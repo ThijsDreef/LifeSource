@@ -1,0 +1,237 @@
+fileFormatVersion: 2
+guid: bcd826f2b56c98141b73c501ab55c53f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group1
+    100002: group2
+    100004: pCube33
+    100006: pCube33 1
+    100008: pCube34
+    100010: pCube34 1
+    100012: pCube35
+    100014: pCube35 1
+    100016: pCube36
+    100018: pCube36 1
+    100020: pCube37
+    100022: pCube37 1
+    100024: pCube38
+    100026: pCube38 1
+    100028: pCube39
+    100030: pCube39 1
+    100032: pCube40
+    100034: pCube40 1
+    100036: pCube41
+    100038: pCube41 1
+    100040: pCube42
+    100042: pCube42 1
+    100044: pCube43
+    100046: pCube43 1
+    100048: pCube44
+    100050: pCube44 1
+    100052: pCylinder2
+    100054: pCylinder5
+    100056: pCylinder6
+    100058: //RootNode
+    100060: StairsFoot
+    400000: group1
+    400002: group2
+    400004: pCube33
+    400006: pCube33 1
+    400008: pCube34
+    400010: pCube34 1
+    400012: pCube35
+    400014: pCube35 1
+    400016: pCube36
+    400018: pCube36 1
+    400020: pCube37
+    400022: pCube37 1
+    400024: pCube38
+    400026: pCube38 1
+    400028: pCube39
+    400030: pCube39 1
+    400032: pCube40
+    400034: pCube40 1
+    400036: pCube41
+    400038: pCube41 1
+    400040: pCube42
+    400042: pCube42 1
+    400044: pCube43
+    400046: pCube43 1
+    400048: pCube44
+    400050: pCube44 1
+    400052: pCylinder2
+    400054: pCylinder5
+    400056: pCylinder6
+    400058: //RootNode
+    400060: StairsFoot
+    2100000: lambert1
+    2300000: pCube33
+    2300002: pCube33 1
+    2300004: pCube34
+    2300006: pCube34 1
+    2300008: pCube35
+    2300010: pCube35 1
+    2300012: pCube36
+    2300014: pCube36 1
+    2300016: pCube37
+    2300018: pCube37 1
+    2300020: pCube38
+    2300022: pCube38 1
+    2300024: pCube39
+    2300026: pCube39 1
+    2300028: pCube40
+    2300030: pCube40 1
+    2300032: pCube41
+    2300034: pCube41 1
+    2300036: pCube42
+    2300038: pCube42 1
+    2300040: pCube43
+    2300042: pCube43 1
+    2300044: pCube44
+    2300046: pCube44 1
+    2300048: pCylinder2
+    2300050: StairsFoot
+    3300000: pCube33
+    3300002: pCube33 1
+    3300004: pCube34
+    3300006: pCube34 1
+    3300008: pCube35
+    3300010: pCube35 1
+    3300012: pCube36
+    3300014: pCube36 1
+    3300016: pCube37
+    3300018: pCube37 1
+    3300020: pCube38
+    3300022: pCube38 1
+    3300024: pCube39
+    3300026: pCube39 1
+    3300028: pCube40
+    3300030: pCube40 1
+    3300032: pCube41
+    3300034: pCube41 1
+    3300036: pCube42
+    3300038: pCube42 1
+    3300040: pCube43
+    3300042: pCube43 1
+    3300044: pCube44
+    3300046: pCube44 1
+    3300048: pCylinder2
+    3300050: StairsFoot
+    4300000: pCube33
+    4300002: pCube34
+    4300004: pCube35
+    4300006: pCube36
+    4300008: pCube37
+    4300010: pCube38
+    4300012: pCube39
+    4300014: pCube40
+    4300016: pCube41
+    4300018: pCube42
+    4300020: pCube43
+    4300022: pCube44
+    4300024: pCylinder2
+    4300026: pCube33
+    4300028: pCube34
+    4300030: pCube35
+    4300032: pCube36
+    4300034: pCube37
+    4300036: pCube38
+    4300038: pCube39
+    4300040: pCube40
+    4300042: pCube41
+    4300044: pCube42
+    4300046: pCube43
+    4300048: pCube44
+    4300050: StairsFoot
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 32a920674d5834248997dc8f366763d6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
