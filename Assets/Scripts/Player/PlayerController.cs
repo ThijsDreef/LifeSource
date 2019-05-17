@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
   private void Start() {
     character = GetComponent<ThirdPersonCharacter>();
     navMeshAgent = this.GetComponent<NavMeshAgent>();
-    //navMeshAgent.updateRotation = false;
+    navMeshAgent.updateRotation = false;
     actions[(int)PlayerControllerState.INTERACTING].onEnd += StopInteract;
   }
 
@@ -42,18 +42,22 @@ public class PlayerController : MonoBehaviour {
     }
   }
 
+  /// Function to set a new destination for the navMesh player movement, without callback.
   public void RequestMove(Vector3 TargetDest) {
     Move(TargetDest, null);
   }
 
+  /// Function to set a new destination for the navMesh player movement, with callback.
   public void RequestMove(Vector3 TargetDest, Action CallBack) {
     Move(TargetDest, CallBack);
   }
 
+  /// RequestStartCallBack is used to add functionality on start.
   public void RequestStartCallback(PlayerControllerState state, Action callback) {
     actions[(int)state].onStart += callback;
   }
 
+  /// Request interact function to add interacts.
   public void RequestInteract(Interactable interactObject) {
     interactObject.StartInteract();
     interactable = interactObject;
