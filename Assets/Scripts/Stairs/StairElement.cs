@@ -22,15 +22,15 @@ public class StairElement : MonoBehaviour {
         this.transform.localPosition = beginPos;
     }
     
-    public void RaiseStairElement(){
+    ///Starts a coroutine to lerp the position of invidual stair objects from begin position to end position.
+    public void RaiseStairElement() {
         StartCoroutine(Raise());
     }
-
-    private IEnumerator Raise(){
+    
+    private IEnumerator Raise() {
         do {
             transform.localPosition = Vector3.Lerp(transform.localPosition, endPos, raiseSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
-        }while(this.transform.localPosition.y <= (endHieght - (endHieght/100)));
-        Debug.Log("done");
+        }while(this.transform.localPosition.y <= (endHieght - (endHieght /100)));
     }
 }

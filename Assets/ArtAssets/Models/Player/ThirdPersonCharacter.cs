@@ -88,8 +88,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	}
 
 
-	private void ScaleCapsuleForCrouching(bool crouch)
-	{
+	private void ScaleCapsuleForCrouching(bool crouch) {
 		if (isGrounded && crouch) {
 			if (crouching) return;
 			capsuleCollider.height = capsuleCollider.height / 2f;
@@ -99,8 +98,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		else {
 			Ray crouchRay = new Ray(playerRigidbody.position + Vector3.up * capsuleCollider.radius * charachterHalf, Vector3.up);
 			float crouchRayLength = capsuleHeight - capsuleCollider.radius * charachterHalf;
-			if (Physics.SphereCast(crouchRay, capsuleCollider.radius * charachterHalf, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
-			{
+			if (Physics.SphereCast(crouchRay, capsuleCollider.radius * charachterHalf, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore)) {
 				crouching = true;
 				return;
 			}
@@ -186,7 +184,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 			// we preserve the existing y part of the current velocity.
 			updatedVelocity.y = playerRigidbody.velocity.y;
 			playerRigidbody.velocity = updatedVelocity;
-
 		}
 	}
 

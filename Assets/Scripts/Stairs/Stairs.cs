@@ -12,11 +12,12 @@ public class Stairs : MonoBehaviour {
         stairs = GetComponentsInChildren<StairElement>();
     }
 
-    public void EnableStairs(){
+    /// Starts a coroutine to enable a stair raise function with a small delay between stair components.
+    public void EnableStairs() {
         StartCoroutine(StairRaise());
     }
 
-    private IEnumerator StairRaise(){
+    private IEnumerator StairRaise() {
         for (int i = 0; i < stairs.Length; i++) {
             stairs[i].RaiseStairElement();
             yield return new WaitForSeconds(stairRaiseDelay);
