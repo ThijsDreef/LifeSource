@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TempleInteract : Interactable {
-  [SerializeField]
-  private Counter counter = new Counter(3);
 
   /// is not implemented yet could be used to start a VFX
   protected override void BeamInteract() { }
@@ -19,8 +17,6 @@ public class TempleInteract : Interactable {
   }
   /// starts the new level if the required count is lower or equall to 0
   private void RequestTouch() {
-    if (counter.count <= 0) {
-      // TODO: should start next level here
-    }
+    // TODO: should start next level here
   }
 }

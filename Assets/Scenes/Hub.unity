@@ -237,3 +237,17 @@ MonoBehaviour:
   m_VoxelSize: 0.15666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 3944f38c2060d7749a46f77bc52623a3, type: 2}
+--- !u!114 &6655930323344471657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655930323344471655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a8e44d9dd4bff4aba06da3a32993c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothness: 100
+  rotationStrength: 100

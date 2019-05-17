@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectableInteract : Interactable {
-  [SerializeField] 
-  Counter counter;
   [SerializeField]
   float destroyDelay = 0;
   /// could be used to start some form of VFX 
@@ -25,7 +23,6 @@ public class CollectableInteract : Interactable {
 
   /// destroys this object and decrements the counter 
   private void OnPickUp() {
-    counter.count--;
     Destroy(this, destroyDelay);
   }
 }
