@@ -97,4 +97,8 @@ public class PlayerController : MonoBehaviour {
     SetState(PlayerControllerState.IDLE);
     CallBack?.Invoke();
   }
+
+  public void WarpPlayer(Vector3 position) {
+    navMeshAgent.Warp(position);
+  }
 }
