@@ -98,6 +98,7 @@ public class PlayerController : MonoBehaviour {
     CallBack?.Invoke();
   }
 
+  /// Warp the player to the given position.
   public void WarpPlayer(Vector3 position) {
     navMeshAgent.Warp(position);
   }
