@@ -6,7 +6,7 @@ public class HubController : MonoBehaviour {
     public List<GameObject> levelHub = new List<GameObject>();
 
 
-    private void Start() { 
+    private void Awake() { 
         SpawnLevelHubs();
     }  
 
