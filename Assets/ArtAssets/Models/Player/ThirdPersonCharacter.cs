@@ -169,6 +169,19 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
 	}
 
+	private void OnAnimatorMove() {
+		// we implement this function to override the default root motion.
+		// this allows us to modify the positional speed before it's applied.
+		Debug.Log("Animation moving");
+		animator.ApplyBuiltinRootMotion();
+		if (isGrounded && Time.deltaTime > 0) {
+			Vector3 updatedVelocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
+			// we preserve the existing y part of the current velocity.
+			updatedVelocity.y = playerRigidbody.velocity.y;
+			playerRigidbody.velocity = updatedVelocity;
+		}
+	}
+
 	private void CheckGroundStatus() {
 		RaycastHit hitInfo;
 #if UNITY_EDITOR
