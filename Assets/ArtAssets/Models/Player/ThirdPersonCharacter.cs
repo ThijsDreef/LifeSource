@@ -2,9 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(CapsuleCollider))]
-[RequireComponent(typeof(Animator))]
+
 public class ThirdPersonCharacter : MonoBehaviour {
 	[SerializeField] 
 	private float movingTurnSpeed = 360;
@@ -52,10 +50,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		playerRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		startOriginGroundCheckDistance = groundCheckDistance;
 		oldPosition = ImageTarget.transform.position;
-	}
-
-	private void Update() {
-		Debug.Log(animator.applyRootMotion);
+		animator.applyRootMotion = true;
 	}
 
 	/// moves the character based on root motion
@@ -164,7 +159,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 			// jump!
 			playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, jumpPower, playerRigidbody.velocity.z);
 			isGrounded = false;
-			animator.applyRootMotion = false;
 			groundCheckDistance = 0.1f;
 		}
 	}
@@ -173,18 +167,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// help the character turn faster (this is in addition to root rotation in the animation)
 		float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
-	}
-
-	private void OnAnimatorMove() {
-		// we implement this function to override the default root motion.
-		// this allows us to modify the positional speed before it's applied.
-		Debug.Log("Animation moving");
-		if (isGrounded && Time.deltaTime > 0) {
-			Vector3 updatedVelocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
-			// we preserve the existing y part of the current velocity.
-			updatedVelocity.y = playerRigidbody.velocity.y;
-			playerRigidbody.velocity = updatedVelocity;
-		}
 	}
 
 	private void CheckGroundStatus() {
@@ -203,7 +185,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		else {
 			isGrounded = false;
 			groundNormal = Vector3.up;
-			animator.applyRootMotion = false;
+			//animator.applyRootMotion = false;
 		}
 	}
 }

@@ -5,7 +5,6 @@ using UnityEngine.AI;
 using System;
 
 
-[RequireComponent(typeof(NavMeshAgent))]
 public class PlayerController : MonoBehaviour {
   public static PlayerController Instance = null;
   [SerializeField]
