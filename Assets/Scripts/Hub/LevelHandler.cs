@@ -1,0 +1,64 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class LevelHandler : MonoBehaviour {
+
+    public static LevelHandler Instance;
+    public int levelCount;
+    private List<int> unlockedLevels = new List<int>();
+    private int currentLevelIndex;
+    private AsyncOperation loadScene;
+    [SerializeField]
+    int[] defaultUnlockedLevels = new int[1];
+
+    [SerializeField]
+    int defaultStartLevel = 0;
+    
+
+    private void Start() {
+
+        if(Instance == null) {
+            Instance = this;
+        }
+        else {
+            Destroy(this);
+            return;
+        }
+
+        for(int i = 0; i < levelCount; i++) {
+            unlockedLevels.Add(PlayerPrefs.GetInt("UnlockState" + i));
+        }
+        for (int i = 0; i < defaultUnlockedLevels.Length; i++) unlockedLevels[defaultUnlockedLevels[i]] = defaultUnlockedLevels[i];
+        ChangeLevel(defaultStartLevel);
+    }   
+
+    /// Disable all levels and then enables the given level if it is unlockd.
+    public void ChangeLevel(int levelIndex) {
+        if(unlockedLevels.Contains(levelIndex) && currentLevelIndex != levelIndex) {
+            OverlayController.Instance.onEndOverlay.AddListener(SetupLevel);
+            OverlayController.Instance.StartOverlay();
+            loadScene = SceneManager.LoadSceneAsync(levelIndex, LoadSceneMode.Additive);
+            loadScene.allowSceneActivation = false;
+            if(currentLevelIndex != 0) {
+                SceneManager.UnloadSceneAsync(currentLevelIndex, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            }
+            currentLevelIndex = levelIndex;
+        }
+    }
+
+    /// Activates the scene and removes the overlay.
+    private void SetupLevel() {
+        loadScene.allowSceneActivation = true;
+        OverlayController.Instance.onEndOverlay.RemoveListener(SetupLevel);
+    }
+
+    /// Unlocks level witch kan then be played.
+    public void UnlockLevel(int unlockIndex) {
+        if(!unlockedLevels.Contains(unlockIndex)) {
+            unlockedLevels[unlockIndex] = unlockIndex;
+            PlayerPrefs.SetInt("UnlockState" + unlockIndex, unlockIndex);
+        }
+    }
+}
