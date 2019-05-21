@@ -49,8 +49,8 @@ public class BeamCaster : MonoBehaviour {
                 interactable.GetComponent<Interactable>()?.OnBeamHit();
             }
             if(hit.collider.CompareTag("Reflectable")) {
-                direction = Vector3.Reflect(hit.point - startPosition, hit.normal);
-                CalculateHitPoints(hit.point, direction);
+                direction = hit.transform.forward;
+                CalculateHitPoints(hit.transform.position, direction);
             }
             else {
                 hitPoints.Add(hit.point);
