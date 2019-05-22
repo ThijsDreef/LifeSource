@@ -513,7 +513,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: LS_Rig:globalMove01/LS_Rig:joints01/LS_Rig:drv_Hip/LS_Rig:bn_Hip_jnt
+    motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
