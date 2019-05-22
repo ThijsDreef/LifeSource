@@ -103,6 +103,10 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
 	}
 
+	private void ReflectorRotation(){
+		
+	}
+
 	private void CheckGroundStatus() {
 		RaycastHit hitInfo;
 #if UNITY_EDITOR
