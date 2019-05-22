@@ -12,7 +12,7 @@ public class RotateInteractor : EventActivator {
     Debug.LogError(contactOffset);
   }
   private void MoveToInteract() {
-		ParticleContainer.Instance.EmitInteractParticle(this.transform.position + this.transform.forward * contactOffset);
+		ParticleContainer.Instance.EmitInteractParticle(this.transform.position);
     PlayerController.Instance.RequestMove(this.transform.position + this.transform.forward * contactOffset, this.RequestRotate);
   }
 
