@@ -10,7 +10,7 @@ public class BeamCaster : MonoBehaviour {
     private Vector3 offset;
     private List<Vector3> hitPoints = new List<Vector3>();
     private List<Transform> objectTransforms = new List<Transform>();
-    private GameObject interactable;
+    private List<Interactable> interactables = new List<Interactable>();
     private BeamVisualizer beamVisualizer;
     private const int MAX_DISTANCE = 150;
     private const int MAX_BOUNCE = 5;
@@ -32,9 +32,15 @@ public class BeamCaster : MonoBehaviour {
 
         hitPoints.Clear();
         objectTransforms.Clear();
-        interactable = null;
+        Interactable[] lastHits = interactables.ToArray();
+        interactables.Clear();
+        interactables.Add(null);
         CalculateHitPoints(transform.position, transform.forward);
         hitPoints[0] += offset;
+        for (int i = 0; i < lastHits.Length; i++) {
+            if (!interactables.Contains(lastHits[i])) 
+                lastHits[i].OnBeamExit();
+        }
     }
 
     /// Cast a ray from the start position to the next object, if that object is able to reflect the beam will reflect to the next until it hits something else or hits nothing.
@@ -44,11 +50,11 @@ public class BeamCaster : MonoBehaviour {
         if(Physics.Raycast(startPosition, direction, out hit, MAX_DISTANCE) && hitPoints.Count < MAX_BOUNCE) {
             objectTransforms.Add(hit.collider.gameObject.transform);
             
-            if(interactable != hit.collider.gameObject && (hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable"))) {
-                interactable = hit.collider.gameObject;
-                interactable.GetComponent<Interactable>()?.OnBeamHit();
+            if (interactables[interactables.Count - 1]?.gameObject != hit.collider.gameObject && (hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable"))) {
+                interactables.Add(hit.collider.gameObject.GetComponent<Interactable>());
+                interactables[interactables.Count -1].OnBeamHit();
             }
-            if(hit.collider.CompareTag("Reflectable")) {
+            if (hit.collider.CompareTag("Reflectable")) {
                 direction = hit.transform.forward;
                 CalculateHitPoints(hit.transform.position, direction);
             }
