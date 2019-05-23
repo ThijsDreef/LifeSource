@@ -1133,7 +1133,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: c8c3d7ab7509d6b469227789e39f62ee,
+      objectReference: {fileID: 23800000, guid: 15b44e0d205b196468e4d8d6e953f8f0,
         type: 2}
     - target: {fileID: 1174321755895832322, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
         type: 3}
@@ -4910,6 +4910,10 @@ PrefabInstance:
         type: 3}
       propertyPath: onBeamInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 449068722, guid: 41e5113a0104ff14ab9e1e4f123dbe31, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205480991344800402, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
         type: 3}
