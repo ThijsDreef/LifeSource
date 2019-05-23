@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum TemplePieceType {
   UNDEFINED,
@@ -12,8 +13,11 @@ public enum TemplePieceType {
 public class TemplePieceInteract : EventActivator {
 
   [SerializeField]
+  private UnityEvent onPickUp;
+
+  [SerializeField]
   private TempleInteract temple;
-  [SerializeField] 
+  [SerializeField]
   private float destroyDelay = 0;
   [SerializeField]
   private TemplePieceType type;
@@ -41,8 +45,9 @@ public class TemplePieceInteract : EventActivator {
     PlayerController.Instance.RequestMove(this.transform.position + this.transform.forward * contactOffset, this.OnPickUp);
   }
 
-  /// destroys this object and decrements the counter 
+  /// destroys this object and decrements the counter
   private void OnPickUp() {
+    onPickUp?.Invoke();
     if (temple) temple.EnqueueTemplePiece(Type);
     Destroy(this.gameObject, destroyDelay);
   }
