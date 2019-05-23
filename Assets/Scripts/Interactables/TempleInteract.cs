@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TempleInteract : EventActivator {
+  [SerializeField]
+  private int levelToStart = 2;
+  [SerializeField]
+  private int levelToUnlock = 2;
   private Stack<TemplePieceType> piecesToAdd = new Stack<TemplePieceType>();
   [SerializeField]
   private Transform[] props = new Transform[3];
@@ -30,6 +34,13 @@ public class TempleInteract : EventActivator {
       props[((int)piece) - 1].gameObject.SetActive(true);
       piece = piecesToAdd.Pop();
     }
+    for (int i = 0; i < props.Length; i++) {
+      if (!props[i].gameObject.activeSelf) {
+        return;
+      }
+    }
+    LevelHandler.Instance.UnlockLevel(levelToUnlock);
+    LevelHandler.Instance.ChangeLevel(levelToStart);
   }
 
   public void EnqueueTemplePiece(TemplePieceType piece) {
