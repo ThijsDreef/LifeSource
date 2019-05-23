@@ -8,7 +8,7 @@ public class RotateInteractor : EventActivator {
 
   private void Awake() {
   
-    contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
+    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
     Debug.LogError(contactOffset);
   }
   private void MoveToInteract() {
