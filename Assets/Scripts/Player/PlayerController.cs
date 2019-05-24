@@ -45,6 +45,16 @@ public class PlayerController : MonoBehaviour {
   public void RequestMove(Vector3 TargetDest, Action CallBack = null) {
     Move(TargetDest, CallBack);
   }
+  
+  public void RequestLookAt(Transform target, Action callback = null){
+    PlayerLookAt(target, callback);
+  }
+
+  private void PlayerLookAt(Transform target, Action callback = null){
+      Vector3 lookDirection = target.position;
+      lookDirection.y = transform.position.y;
+      transform.LookAt(lookDirection);
+  }
 
   /// RequestStartCallBack is used to add functionality on start.
   public void RequestStartCallback(PlayerControllerState state, Action callback) {
@@ -56,6 +66,16 @@ public class PlayerController : MonoBehaviour {
     interactObject.StartInteract();
     interactable = interactObject;
     SetState(PlayerControllerState.INTERACTING);
+  }
+
+  public void RequestReflectorRotation(){
+    //navMeshAgent.enabled = false;
+    character.ReflectorRotationEnabled();
+  }
+
+  public void RequestStopReflectorRotation(){
+    character.ReflectorRotationDisabled();
+    //navMeshAgent.enabled = true;
   }
 
   private void StopInteract() {

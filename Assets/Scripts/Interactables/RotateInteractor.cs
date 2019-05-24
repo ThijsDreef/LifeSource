@@ -7,9 +7,7 @@ public class RotateInteractor : EventActivator {
   private float contactOffset = 0.0f;
 
   private void Awake() {
-  
-    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
-    Debug.LogError(contactOffset);
+    contactOffset = -GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.6f;
   }
   private void MoveToInteract() {
 		ParticleContainer.Instance.EmitInteractParticle(this.transform.position);
@@ -28,6 +26,7 @@ public class RotateInteractor : EventActivator {
 
   private void RequestRotate() {
     PlayerController.Instance.RequestInteract(this);
+    PlayerController.Instance.RequestLookAt(this.transform);
   }
 
   /// starts interacting coroutine

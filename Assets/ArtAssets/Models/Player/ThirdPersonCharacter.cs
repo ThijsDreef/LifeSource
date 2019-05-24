@@ -30,13 +30,13 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	private float capsuleHeight;
 	private Vector3 capsuleCenter;
 	private CapsuleCollider capsuleCollider;
-	private bool crouching;
 
 	private Vector3 oldPosition;
 
-
 	[SerializeField]
 	private Transform ImageTarget;
+
+	private bool reflectorRotationEnabled;
 
 
 	private void Start() {
@@ -74,8 +74,8 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// update the animator parameters
 		animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
 		animator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
-		//animator.SetBool("Crouch", crouching);
 		animator.SetBool("OnGround", isGrounded);
+		animator.SetBool("ReflectorRotating", reflectorRotationEnabled);
 
 		// calculate which leg is behind, so as to leave that leg trailing in the jump animation
 		// (This code is reliant on the specific run cycle offset in our animations,
@@ -103,8 +103,12 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
 	}
 
-	private void ReflectorRotation(){
-		
+	public void ReflectorRotationEnabled(){
+		reflectorRotationEnabled = true;
+	}
+
+	public void ReflectorRotationDisabled(){
+		reflectorRotationEnabled = false;
 	}
 
 	private void CheckGroundStatus() {
