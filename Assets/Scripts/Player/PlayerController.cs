@@ -7,6 +7,7 @@ using System;
 
 public class PlayerController : MonoBehaviour {
   public static PlayerController Instance = null;
+  private Vector3 sampledPosition;
   [SerializeField]
   private NavMeshAgent navMeshAgent;
   [SerializeField]
@@ -94,6 +95,7 @@ public class PlayerController : MonoBehaviour {
       Debug.LogError("could not reach destination");
       return;
     }
+    sampledPosition = TargetDest;
     navMeshAgent.isStopped = false;
     SetState(PlayerControllerState.WALKING);
     navMeshAgent.SetDestination(hit.position);
@@ -124,8 +126,8 @@ public class PlayerController : MonoBehaviour {
     } while (!TargetReached);
     SetState(PlayerControllerState.IDLE);
     navMeshAgent.isStopped = true;
-    if (TargetReached) CallBack?.Invoke();
-  }
+    if (TargetReached && Vector3.Distance(sampledPosition, this.transform.position) < 10.0) CallBack?.Invoke();
+  } 
 
   /// Warp the player to the given position.
   public void WarpPlayer(Vector3 position) {
