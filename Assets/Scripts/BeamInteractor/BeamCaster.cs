@@ -11,6 +11,7 @@ public class BeamCaster : MonoBehaviour {
     private List<Vector3> hitPoints = new List<Vector3>();
     private List<Transform> objectTransforms = new List<Transform>();
     private List<Interactable> interactables = new List<Interactable>();
+    private GameObject interactable;
     private BeamVisualizer beamVisualizer;
     private const int MAX_DISTANCE = 150;
     private const int MAX_BOUNCE = 5;
@@ -49,8 +50,8 @@ public class BeamCaster : MonoBehaviour {
         hitPoints.Add(startPosition);
         if(Physics.Raycast(startPosition, direction, out hit, MAX_DISTANCE) && hitPoints.Count < MAX_BOUNCE) {
             objectTransforms.Add(hit.collider.gameObject.transform);
-            
-            if (interactables[interactables.Count - 1]?.gameObject != hit.collider.gameObject && (hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable"))) {
+            if (interactable != hit.collider.gameObject && (hit.collider.CompareTag("Reflectable") || hit.collider.CompareTag("Interactable"))) {
+                interactable = hit.collider.gameObject;
                 interactables.Add(hit.collider.gameObject.GetComponent<Interactable>());
                 interactables[interactables.Count -1].OnBeamHit();
             }

@@ -5,9 +5,9 @@ using UnityEngine.AI;
 using System;
 
 
-[RequireComponent(typeof(NavMeshAgent))]
 public class PlayerController : MonoBehaviour {
   public static PlayerController Instance = null;
+  private Vector3 sampledPosition;
   [SerializeField]
   private NavMeshAgent navMeshAgent;
   [SerializeField]
@@ -37,18 +37,13 @@ public class PlayerController : MonoBehaviour {
   private void Update() {
     if(navMeshAgent.hasPath){
       if(TargetReached || navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance){
-      character.Move(Vector3.zero, false ,false);
+        character.Move(Vector3.zero, false ,false);
      }
     }
   }
 
-  /// Function to set a new destination for the navMesh player movement, without callback.
-  public void RequestMove(Vector3 TargetDest) {
-    Move(TargetDest, null);
-  }
-
   /// Function to set a new destination for the navMesh player movement, with callback.
-  public void RequestMove(Vector3 TargetDest, Action CallBack) {
+  public void RequestMove(Vector3 TargetDest, Action CallBack = null) {
     Move(TargetDest, CallBack);
   }
 
@@ -75,8 +70,15 @@ public class PlayerController : MonoBehaviour {
   }
 
   private void Move(Vector3 TargetDest, Action CallBack) {
+    NavMeshHit hit;
+    if (!NavMesh.SamplePosition(TargetDest, out hit, 10.0f, NavMesh.AllAreas)) {
+      Debug.LogError("could not reach destination");
+      return;
+    }
+    sampledPosition = TargetDest;
+    navMeshAgent.isStopped = false;
     SetState(PlayerControllerState.WALKING);
-    navMeshAgent.SetDestination(TargetDest);
+    navMeshAgent.SetDestination(hit.position);
     if (currentRoutine != null) StopCoroutine(currentRoutine);
     currentRoutine = StartCoroutine(Reached(CallBack));
   }
@@ -86,21 +88,26 @@ public class PlayerController : MonoBehaviour {
     do {
       if (navMeshAgent.pathPending) {
         yield return null;
+        continue;
       }
       if (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance) {
         character.Move(navMeshAgent.desiredVelocity, false, false);
         yield return null;
+        continue;
       }
-      if (navMeshAgent.hasPath) {
+      if (!navMeshAgent.hasPath) {
         yield return null;
+        SetState(PlayerControllerState.IDLE);
+        break;
       }
       else {
         TargetReached = true;
       }
     } while (!TargetReached);
     SetState(PlayerControllerState.IDLE);
-    CallBack?.Invoke();
-  }
+    navMeshAgent.isStopped = true;
+    if (TargetReached && Vector3.Distance(sampledPosition, this.transform.position) < 10.0) CallBack?.Invoke();
+  } 
 
   /// Warp the player to the given position.
   public void WarpPlayer(Vector3 position) {

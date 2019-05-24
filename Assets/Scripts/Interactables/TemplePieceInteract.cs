@@ -26,7 +26,7 @@ public class TemplePieceInteract : EventActivator {
   private float contactOffset = 0.0f;
 
   private void Awake() {
-    contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
+    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
   }
 
   /// requests pickup of the collectable
