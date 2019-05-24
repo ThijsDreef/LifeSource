@@ -9521,10 +9521,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094238563008364856}
-  - component: {fileID: 3818793154838053486}
   m_Layer: 0
   m_Name: reflector
-  m_TagString: Untagged
+  m_TagString: Reflectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9537,25 +9536,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6065942275254526196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.1, z: 0}
+  m_LocalPosition: {x: 0, y: 3.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4196950154163981447}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3818793154838053486
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6065942275254526196}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 30, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6918996333698994944
 GameObject:
   m_ObjectHideFlags: 0
@@ -9653,8 +9639,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 18, y: 17.259274, z: 18}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 18, y: 27.507141, z: 18}
+  m_Center: {x: 0, y: 5.1239243, z: 0}
 --- !u!1001 &5354426234792923584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9662,14 +9648,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4196950154163981447}
     m_Modifications:
-    - target: {fileID: 100056, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
-      propertyPath: m_Name
-      value: crystal reflector
-      objectReference: {fileID: 0}
-    - target: {fileID: 100066, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
-      propertyPath: m_TagString
-      value: Reflectable
-      objectReference: {fileID: 0}
     - target: {fileID: 400056, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9714,6 +9692,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
+      propertyPath: m_Name
+      value: crystal reflector
+      objectReference: {fileID: 0}
+    - target: {fileID: 100066, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
+      propertyPath: m_TagString
+      value: Reflectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300064, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 696292f06feaa094185431aa4a45dfda, type: 2}
     - target: {fileID: 2300096, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9854,10 +9844,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1b3833d91c73ad74d81283db6f15cbec, type: 2}
-    - target: {fileID: 2300064, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 696292f06feaa094185431aa4a45dfda, type: 2}
     - target: {fileID: 2300066, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

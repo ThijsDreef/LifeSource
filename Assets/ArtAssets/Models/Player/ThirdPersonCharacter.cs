@@ -2,9 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(CapsuleCollider))]
-[RequireComponent(typeof(Animator))]
+
 public class ThirdPersonCharacter : MonoBehaviour {
 	[SerializeField] 
 	private float movingTurnSpeed = 360;
@@ -16,8 +14,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	private float gravityMultiplier = 2f;
 	[SerializeField] 
 	private float runCycleLegOffset = 0.2f; //specific to the character in sample assets, will need to be modified to work with others
-	[SerializeField]
-	private float moveSpeedMultiplier = 1f;
 	[SerializeField] 
 	private float animSpeedMultiplier = 1f;
 	[SerializeField]
@@ -52,10 +48,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		playerRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		startOriginGroundCheckDistance = groundCheckDistance;
 		oldPosition = ImageTarget.transform.position;
-	}
-
-	private void Update() {
-		Debug.Log(animator.applyRootMotion);
+		animator.applyRootMotion = true;
 	}
 
 	/// moves the character based on root motion
@@ -72,49 +65,8 @@ public class ThirdPersonCharacter : MonoBehaviour {
 
 		ApplyExtraTurnRotation();
 		
-		// control and velocity handling is different when grounded and airborne:
-		if (isGrounded) {
-			HandleGroundedMovement(crouch, jump);
-		}
-		else {
-			HandleAirborneMovement();
-		}
-
-		ScaleCapsuleForCrouching(crouch);
-		PreventStandingInLowHeadroom();
-
 		// send input and other state parameters to the animator
 		UpdateAnimator(move);
-	}
-
-
-	private void ScaleCapsuleForCrouching(bool crouch) {
-		if (isGrounded && crouch) {
-			if (crouching) return;
-			capsuleCollider.height = capsuleCollider.height / 2f;
-			capsuleCollider.center = capsuleCollider.center / 2f;
-			crouching = true;
-		}
-		else {
-			Ray crouchRay = new Ray(playerRigidbody.position + Vector3.up * capsuleCollider.radius * charachterHalf, Vector3.up);
-			float crouchRayLength = capsuleHeight - capsuleCollider.radius * charachterHalf;
-			if (Physics.SphereCast(crouchRay, capsuleCollider.radius * charachterHalf, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore)) {
-				crouching = true;
-				return;
-			}
-			capsuleCollider.height = capsuleHeight;
-			capsuleCollider.center = capsuleCenter;
-			crouching = false;
-		}
-	}
-
-	private void PreventStandingInLowHeadroom() {
-		// prevent standing up in crouch-only zones
-		if (!crouching) {
-			Ray crouchRay = new Ray(playerRigidbody.position + Vector3.up * capsuleCollider.radius * charachterHalf, Vector3.up);
-			float crouchRayLength = capsuleHeight - capsuleCollider.radius * charachterHalf;
-			if (Physics.SphereCast(crouchRay, capsuleCollider.radius * charachterHalf, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore)) crouching = true;
-		}
 	}
 
 
@@ -124,9 +76,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		animator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
 		//animator.SetBool("Crouch", crouching);
 		animator.SetBool("OnGround", isGrounded);
-		if (!isGrounded) {
-			//animator.SetFloat("Jump", playerRigidbody.velocity.y);
-		}
 
 		// calculate which leg is behind, so as to leave that leg trailing in the jump animation
 		// (This code is reliant on the specific run cycle offset in our animations,
@@ -148,43 +97,14 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		}
 	}
 
-
-	private void HandleAirborneMovement() {
-		// apply extra gravity from multiplier:
-		Vector3 extraGravityForce = (Physics.gravity * gravityMultiplier) - Physics.gravity;
-		playerRigidbody.AddForce(extraGravityForce);
-
-		groundCheckDistance = playerRigidbody.velocity.y < 0 ? startOriginGroundCheckDistance : 0.01f;
-	}
-
-
-	private void HandleGroundedMovement(bool crouch, bool jump) {
-		// check whether conditions are right to allow a jump:
-		if (jump && !crouch && animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded")) {
-			// jump!
-			playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, jumpPower, playerRigidbody.velocity.z);
-			isGrounded = false;
-			animator.applyRootMotion = false;
-			groundCheckDistance = 0.1f;
-		}
-	}
-
 	private void ApplyExtraTurnRotation() {
 		// help the character turn faster (this is in addition to root rotation in the animation)
 		float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
 	}
 
-	private void OnAnimatorMove() {
-		// we implement this function to override the default root motion.
-		// this allows us to modify the positional speed before it's applied.
-		Debug.Log("Animation moving");
-		if (isGrounded && Time.deltaTime > 0) {
-			Vector3 updatedVelocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
-			// we preserve the existing y part of the current velocity.
-			updatedVelocity.y = playerRigidbody.velocity.y;
-			playerRigidbody.velocity = updatedVelocity;
-		}
+	private void ReflectorRotation(){
+		
 	}
 
 	private void CheckGroundStatus() {
@@ -203,7 +123,7 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		else {
 			isGrounded = false;
 			groundNormal = Vector3.up;
-			animator.applyRootMotion = false;
+			//animator.applyRootMotion = false;
 		}
 	}
 }
