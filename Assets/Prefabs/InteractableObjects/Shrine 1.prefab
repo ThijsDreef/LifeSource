@@ -366,16 +366,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
-        type: 3}
-      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8199503123984059609}
-    - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
-        type: 3}
-      propertyPath: temple
-      value: 
-      objectReference: {fileID: 863379173560764524}
     - target: {fileID: 3973744007032783547, guid: 3068afb116f429049940d64303ffd931,
         type: 3}
       propertyPath: m_Size.x
@@ -386,6 +376,16 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
+        type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8199503123984059609}
+    - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
+        type: 3}
+      propertyPath: temple
+      value: 
+      objectReference: {fileID: 863379173560764524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3068afb116f429049940d64303ffd931, type: 3}
 --- !u!4 &5436726120546549432 stripped
@@ -461,16 +461,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555815536684981631, guid: b94bd12352328ad4eb177e3e1a09aa71,
-        type: 3}
-      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8199503123984059609}
-    - target: {fileID: 555815536684981631, guid: b94bd12352328ad4eb177e3e1a09aa71,
-        type: 3}
-      propertyPath: temple
-      value: 
-      objectReference: {fileID: 863379173560764524}
     - target: {fileID: 8674444643957264281, guid: b94bd12352328ad4eb177e3e1a09aa71,
         type: 3}
       propertyPath: m_Size.z
@@ -486,6 +476,16 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 555815536684981631, guid: b94bd12352328ad4eb177e3e1a09aa71,
+        type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8199503123984059609}
+    - target: {fileID: 555815536684981631, guid: b94bd12352328ad4eb177e3e1a09aa71,
+        type: 3}
+      propertyPath: temple
+      value: 
+      objectReference: {fileID: 863379173560764524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bd12352328ad4eb177e3e1a09aa71, type: 3}
 --- !u!4 &8636387880467467914 stripped
