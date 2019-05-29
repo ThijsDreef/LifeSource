@@ -189,7 +189,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 3944f38c2060d7749a46f77bc52623a3,
+      objectReference: {fileID: 23800000, guid: 9fa9624de5a7d9c41b46a7c5ec07644c,
         type: 2}
     - target: {fileID: 6655930323344471656, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
@@ -421,11 +421,6 @@ PrefabInstance:
       propertyPath: levelIndex
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 7623912918023281428, guid: f109c51bef8428d48b1929ebe60bfbb5,
-        type: 3}
-      propertyPath: holdInteractionTime
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4587527126451027375, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
       propertyPath: levelIndex
@@ -576,12 +571,22 @@ PrefabInstance:
     - target: {fileID: 4494533221568605667, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651664529835042402, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786546434517096673, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelTextCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995645084253512467, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_Text
+      value: T
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f109c51bef8428d48b1929ebe60bfbb5, type: 3}
