@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour {
+  public static int Counter = 0;
   [SerializeField]
   private float holdInteractionTime = 1.0f;
   private float beamHoldInteractionTime = 1.0f;
@@ -25,6 +26,7 @@ public abstract class Interactable : MonoBehaviour {
   public virtual void StopInteract() { }
 
   private void OnMouseDown() {
+    Counter++;
     Interact();
   }
 
@@ -35,7 +37,7 @@ public abstract class Interactable : MonoBehaviour {
 
   private void OnMouseDrag() {
     currentHoldInteractionTime += Time.deltaTime;
-    if (holdInteractionTime < currentHoldInteractionTime) {
+    if (holdInteractionTime > currentHoldInteractionTime) {
       HoldInteract();
       currentHoldInteractionTime = 0;
     }
