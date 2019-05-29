@@ -5,10 +5,9 @@ using UnityEngine.Audio;
 
 public class SoundController : MonoBehaviour
 {
-    public AudioMixerGroup audioMixerGroup;
+    public AudioMixerGroup SFXMixer;
     public static SoundController Instance;
-
-    public Sound[] sounds;
+    public Sound[] SFX;
     private void Awake() {
         if (Instance != null) {
             Destroy(gameObject);
@@ -22,19 +21,19 @@ public class SoundController : MonoBehaviour
     }
 
     private void AudioSourcesCreator() {
-        for (int i = 0; i < sounds.Length; i++) {
-            GameObject _go = new GameObject("Sound_" + i + "_" + sounds[i].soundName);
+        for (int i = 0; i < SFX.Length; i++) {
+            GameObject _go = new GameObject("Sound_" + i + "_" + SFX[i].soundName);
             _go.transform.SetParent(this.transform);
             AudioSource audioSource = _go.AddComponent<AudioSource>();
-            audioSource.outputAudioMixerGroup = audioMixerGroup;
-            sounds[i].SetSource(audioSource);
+            audioSource.outputAudioMixerGroup = SFXMixer;
+            SFX[i].SetSource(audioSource);
         }
     }
 
     public void PlaySound(string _soundName) {
-        for (int i = 0; i < sounds.Length; i++) {
-            if (sounds[i].soundName == _soundName) {
-                StartCoroutine(Delay(i, sounds[i].delay));
+        for (int i = 0; i < SFX.Length; i++) {
+            if (SFX[i].soundName == _soundName) {
+                StartCoroutine(Delay(i, SFX[i].delay));
                 return;
             }
         }
@@ -44,6 +43,18 @@ public class SoundController : MonoBehaviour
 
     private IEnumerator Delay(int index, float delayTime) {
         yield return new WaitForSeconds(delayTime);
-        sounds[index].Play();
+        SFX[index].Play();
+    }
+
+    public void ToggleAudio(string type) {
+        float volume;
+        SFXMixer.audioMixer.GetFloat(type, out volume);
+        if(volume == 0) {
+            SFXMixer.audioMixer.SetFloat(type, -80);
+        }
+        else {
+            SFXMixer.audioMixer.SetFloat(type, 0);
+        }
+        
     }
 }
