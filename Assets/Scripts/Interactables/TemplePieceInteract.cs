@@ -48,6 +48,7 @@ public class TemplePieceInteract : EventActivator {
   /// destroys this object and decrements the counter
   private void OnPickUp() {
     onPickUp?.Invoke();
+    RelicsCollected.Instance.CollectPiece(Type);
     if (temple) temple.EnqueueTemplePiece(Type);
     Destroy(this.gameObject, destroyDelay);
   }

@@ -54,11 +54,15 @@ public class LevelHandler : MonoBehaviour {
         OverlayController.Instance.onEndOverlay.RemoveListener(SetupLevel);
     }
 
-    /// Unlocks level witch kan then be played.
+    /// Unlocks level which can then be played.
     public void UnlockLevel(int unlockIndex) {
         if(!unlockedLevels.Contains(unlockIndex)) {
-            unlockedLevels[unlockIndex] = unlockIndex;
+            unlockedLevels.Add(unlockIndex);
             PlayerPrefs.SetInt("UnlockState" + unlockIndex, unlockIndex);
         }
+    }
+
+    public bool IsLevelUnlocked(int level) {
+        return unlockedLevels.Contains(level);
     }
 }
