@@ -8726,7 +8726,7 @@ Transform:
   m_GameObject: {fileID: 8724533677875905922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.388574, y: 1.388574, z: 1.388574}
   m_Children:
   - {fileID: 6674679597015489489}
   - {fileID: 4492287199709119710}
@@ -13714,11 +13714,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8724533677876205986}
     m_Modifications:
-    - target: {fileID: 5612334014426413665, guid: 7ccb079deb50b684ba27aca71b110209,
-        type: 3}
-      propertyPath: m_Name
-      value: Relic_horn_R
-      objectReference: {fileID: 0}
     - target: {fileID: 8698586329318738392, guid: 7ccb079deb50b684ba27aca71b110209,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13788,6 +13783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.7343552
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612334014426413665, guid: 7ccb079deb50b684ba27aca71b110209,
+        type: 3}
+      propertyPath: m_Name
+      value: Relic_horn_R
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ccb079deb50b684ba27aca71b110209, type: 3}
