@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 221267624914093903}
   - component: {fileID: 3152247003913440704}
   - component: {fileID: 8133432894186123446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LevelSelectPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
