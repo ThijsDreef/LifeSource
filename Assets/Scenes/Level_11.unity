@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 639950fa213a4194daf497194d9ebaae,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -162,6 +163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 47caf07e25222ca41a2a889ce82dbde1, type: 2}
     - target: {fileID: 13700000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
       value: 3
@@ -206,10 +211,6 @@ PrefabInstance:
       propertyPath: m_DirtyAABB
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 47caf07e25222ca41a2a889ce82dbde1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
 --- !u!4 &1150095190 stripped
