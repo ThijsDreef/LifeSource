@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7684356825442310706}
   m_Layer: 0
-  m_Name: Shrine 1
+  m_Name: FinalShrine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,21 +151,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2746873002312689180, guid: 01a1cba66e96f6544a568de179a41a2b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 4.1202483
-      objectReference: {fileID: 0}
-    - target: {fileID: 2746873002312689180, guid: 01a1cba66e96f6544a568de179a41a2b,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 1.5601242
-      objectReference: {fileID: 0}
-    - target: {fileID: 2746873002312689180, guid: 01a1cba66e96f6544a568de179a41a2b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 64563198916008964, guid: 01a1cba66e96f6544a568de179a41a2b,
         type: 3}
@@ -381,21 +366,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3973744007032783547, guid: 3068afb116f429049940d64303ffd931,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3973744007032783547, guid: 3068afb116f429049940d64303ffd931,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
         type: 3}
       propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8199503123984059609}
+    - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
+        type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3813167102852535069}
     - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
         type: 3}
       propertyPath: temple
@@ -476,21 +456,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8674444643957264281, guid: b94bd12352328ad4eb177e3e1a09aa71,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 4.1679525
-      objectReference: {fileID: 0}
-    - target: {fileID: 8674444643957264281, guid: b94bd12352328ad4eb177e3e1a09aa71,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -1.5839763
-      objectReference: {fileID: 0}
-    - target: {fileID: 8674444643957264281, guid: b94bd12352328ad4eb177e3e1a09aa71,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 555815536684981631, guid: b94bd12352328ad4eb177e3e1a09aa71,
         type: 3}
       propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -509,6 +474,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5844528145137419986}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3813167102852535069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7345643838763652559, guid: b94bd12352328ad4eb177e3e1a09aa71,
+    type: 3}
+  m_PrefabInstance: {fileID: 5844528145137419986}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dea3c5d50f9d834881ac7cba9cec97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7432653858810948773
 PrefabInstance:
   m_ObjectHideFlags: 0
