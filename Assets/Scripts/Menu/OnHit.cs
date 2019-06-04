@@ -9,15 +9,25 @@ public class OnHit : MonoBehaviour {
     private GameObject touchParticleObject;
     [SerializeField]
     private RectTransform canvasRectTransform;
+    private bool firstTouch = true;
 
     private void Update() {
-        //Camera.main.WorldToScreenPoint
+        TouchDetection();
+    }
+
+    /// Checks if there is a input on screen and displays a particle on that position.
+    private void TouchDetection() {
         Vector3 hit;
         #if (UNITY_IPHONE || UNITY_ANDROID) && !UNITY_EDITOR 
-            if(Input.touches.Length > 0) {
+            if(Input.touches.Length > 0 && firstTouch) {
+                firstTouch = false;
                 hit = new Vector3(((Input.mousePosition.x / Camera.main.pixelRect.width) - 0.5f) * canvasRectTransform.rect.width, ((Input.mousePosition.y / Camera.main.pixelRect.height) - 0.5f) * canvasRectTransform.rect.height, 0);
                 touchParticleObject.transform.localPosition = hit;
                 touchParticle.Play();
+                
+            }
+            if(Input.touches.Length == 0) {
+                firstTouch = true;
             }
             
         #else
@@ -27,7 +37,5 @@ public class OnHit : MonoBehaviour {
                 touchParticle.Play();
             }
         #endif
-
-        
     }
 }
