@@ -63,6 +63,15 @@ public class PlayerController : MonoBehaviour {
     interactable.StopInteract();
   }
 
+  public void RequestPlayerFlyUp(Action Callback){
+    character.FlyUpAnimation();
+    character.ResetMovement();
+  }
+
+  public void RequestPlayerLand(Action Callback){
+    character.LandAnimation();
+  }
+
   private void SetState(PlayerControllerState state) {
     actions[(int)currentPlayerState].onEnd?.Invoke();
     currentPlayerState = state;
@@ -92,6 +101,7 @@ public class PlayerController : MonoBehaviour {
       }
       if (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance) {
         character.Move(navMeshAgent.desiredVelocity, false, false);
+        Debug.Log("Moving");
         yield return null;
         continue;
       }

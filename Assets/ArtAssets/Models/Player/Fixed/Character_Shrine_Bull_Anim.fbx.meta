@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: df3d165923e63654d9fe70214289c262
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Shrine:controlObjects01
+    100004: Shrine:Environment
+    100006: Shrine:globalMove01
+    100008: Shrine:Head
+    100010: Shrine:Head_cntrl
+    100012: Shrine:Head_cntrl_GRP
+    100014: Shrine:Head_jnt
+    100016: Shrine:joints01
+    100018: Shrine:L_Horn
+    100020: Shrine:L_Horn_cntrl
+    100022: Shrine:L_Horn_cntrl_GRP
+    100024: Shrine:Left_Horn
+    100026: Shrine:Main_cntrl
+    100028: Shrine:model01
+    100030: Shrine:Mouth
+    100032: Shrine:Mouth_cntrl
+    100034: Shrine:Mouth_cntrl_GRP
+    100036: Shrine:Mouth_jnt
+    100038: Shrine:Nose_Ring
+    100040: Shrine:Nosering_cntrl
+    100042: Shrine:Nosering_cntrl_GRP
+    100044: Shrine:Nosering_jnt
+    100046: Shrine:R_Horn
+    100048: Shrine:R_Horn_cntrl
+    100050: Shrine:R_Horn_cntrl_GRP
+    100052: Shrine:Right_Horn
+    100054: Shrine:Root_jnt
+    100056: Shrine:Water_cntrl
+    100058: Shrine:Water_cntrl_GRP
+    100060: Shrine:WaterPlane
+    100062: Shrine:WaterPlane_jnt
+    400000: //RootNode
+    400002: Shrine:controlObjects01
+    400004: Shrine:Environment
+    400006: Shrine:globalMove01
+    400008: Shrine:Head
+    400010: Shrine:Head_cntrl
+    400012: Shrine:Head_cntrl_GRP
+    400014: Shrine:Head_jnt
+    400016: Shrine:joints01
+    400018: Shrine:L_Horn
+    400020: Shrine:L_Horn_cntrl
+    400022: Shrine:L_Horn_cntrl_GRP
+    400024: Shrine:Left_Horn
+    400026: Shrine:Main_cntrl
+    400028: Shrine:model01
+    400030: Shrine:Mouth
+    400032: Shrine:Mouth_cntrl
+    400034: Shrine:Mouth_cntrl_GRP
+    400036: Shrine:Mouth_jnt
+    400038: Shrine:Nose_Ring
+    400040: Shrine:Nosering_cntrl
+    400042: Shrine:Nosering_cntrl_GRP
+    400044: Shrine:Nosering_jnt
+    400046: Shrine:R_Horn
+    400048: Shrine:R_Horn_cntrl
+    400050: Shrine:R_Horn_cntrl_GRP
+    400052: Shrine:Right_Horn
+    400054: Shrine:Root_jnt
+    400056: Shrine:Water_cntrl
+    400058: Shrine:Water_cntrl_GRP
+    400060: Shrine:WaterPlane
+    400062: Shrine:WaterPlane_jnt
+    2100000: lambert1
+    4300000: Shrine:WaterPlane
+    4300002: Shrine:Nose_Ring
+    4300004: Shrine:Left_Horn
+    4300006: Shrine:Mouth
+    4300008: Shrine:Head
+    4300010: Shrine:Right_Horn
+    4300012: Shrine:Environment
+    7400000: Shrine_Bull_Anim
+    9500000: //RootNode
+    13700000: Shrine:Environment
+    13700002: Shrine:Head
+    13700004: Shrine:Left_Horn
+    13700006: Shrine:Mouth
+    13700008: Shrine:Nose_Ring
+    13700010: Shrine:Right_Horn
+    13700012: Shrine:WaterPlane
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

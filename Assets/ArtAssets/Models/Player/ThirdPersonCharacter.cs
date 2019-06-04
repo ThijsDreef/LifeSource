@@ -21,6 +21,8 @@ public class ThirdPersonCharacter : MonoBehaviour {
 
 	private Rigidbody playerRigidbody;
 	private Animator animator;
+	[SerializeField]
+	private Animator wingAnimtor;
 	private bool isGrounded;
 	private	float startOriginGroundCheckDistance;
 	private const float charachterHalf = 0.5f;
@@ -67,6 +69,21 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		
 		// send input and other state parameters to the animator
 		UpdateAnimator(move);
+	}
+
+	public void FlyUpAnimation(){
+		animator.SetTrigger("FlyUp");
+		wingAnimtor.SetTrigger("FlyUp");
+	}
+
+	public void LandAnimation(){
+		animator.SetTrigger("Land");
+	}
+	
+	public void ResetMovement() {
+		Debug.Log("reseted");
+		animator.SetFloat("Forward", 0);
+		animator.SetFloat("Turn", 0);
 	}
 
 
