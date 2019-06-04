@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6479467594218484051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6790504868737020979}
+  m_Layer: 0
+  m_Name: Statue_Bull
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6790504868737020979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479467594218484051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7505573230009369617}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6879867767856395722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7505573230009407537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1703.7119, y: 1314.7952, z: 572.1915}
+  m_Center: {x: -23.674255, y: 683.46985, z: 0.054153442}
+--- !u!208 &9073663020361139254
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7505573230009407537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 851.856, y: 657.398, z: 286.096}
+  m_MoveThreshold: 0
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: -23.674002, y: 683.47003, z: 0.054}
+  m_TimeToStationary: 0
+--- !u!1001 &7505573230009507473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6790504868737020979}
+    m_Modifications:
+    - target: {fileID: 100000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_Name
+      value: Statue_Bull
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9250ede12986a0459ce6ae63c08c68a, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf1fe27ff9ab3f948ab146f914acb2d3, type: 3}
+--- !u!1 &7505573230009407537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: cf1fe27ff9ab3f948ab146f914acb2d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7505573230009507473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7505573230009369617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: cf1fe27ff9ab3f948ab146f914acb2d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7505573230009507473}
+  m_PrefabAsset: {fileID: 0}

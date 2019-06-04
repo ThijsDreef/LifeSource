@@ -5,7 +5,9 @@ using UnityEngine;
 public class LevelSelect : MonoBehaviour
 {
     public int levelIndex;
-
+    private void Start() {
+        if (!LevelHandler.Instance.IsLevelUnlocked(levelIndex)) this.gameObject.SetActive(false);
+    }
     /// Select the level with the given index.
     public void Select() {
         LevelHandler.Instance.ChangeLevel(levelIndex);

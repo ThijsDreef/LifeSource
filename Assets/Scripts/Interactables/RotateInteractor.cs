@@ -2,22 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateInteractor : Interactable {
+public class RotateInteractor : EventActivator {
   private Coroutine interactCoroutine;
+  private float contactOffset = 0.0f;
 
+  private void Awake() {
+  
+    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
+    Debug.LogError(contactOffset);
+  }
   private void MoveToInteract() {
 		ParticleContainer.Instance.EmitInteractParticle(this.transform.position);
-    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
+    PlayerController.Instance.RequestMove(this.transform.position + this.transform.forward * contactOffset, this.RequestRotate);
   }
 
-  /// should get a VFX effect on BeamInteract
-  protected override void BeamInteract() { }
-
   protected override void HoldInteract() {
+    base.HoldInteract();
     MoveToInteract();
   }
 
   protected override void Interact() {
+    base.Interact();
     MoveToInteract();
   }
 
