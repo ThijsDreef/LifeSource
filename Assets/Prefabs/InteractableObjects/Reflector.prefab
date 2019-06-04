@@ -9569,7 +9569,7 @@ GameObject:
   - component: {fileID: 548659301672340139}
   m_Layer: 0
   m_Name: Reflector
-  m_TagString: Untagged
+  m_TagString: Reflectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9666,6 +9666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal reflector
       objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
+      propertyPath: m_TagString
+      value: Reflectable
+      objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
       propertyPath: m_TagString
       value: Reflectable
@@ -9714,6 +9718,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300064, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 696292f06feaa094185431aa4a45dfda, type: 2}
     - target: {fileID: 2300096, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9854,10 +9862,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1b3833d91c73ad74d81283db6f15cbec, type: 2}
-    - target: {fileID: 2300064, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 696292f06feaa094185431aa4a45dfda, type: 2}
     - target: {fileID: 2300066, guid: 33575ebd499c7ae49a5d73b6fb66ed31, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

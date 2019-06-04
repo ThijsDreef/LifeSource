@@ -5,10 +5,7 @@ using UnityEngine;
 public class RotateInteractor : EventActivator {
   private Coroutine interactCoroutine;
   private float contactOffset = 0.0f;
-
   private void Awake() {
-  
-    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
     Debug.LogError(contactOffset);
   }
   private void MoveToInteract() {

@@ -215,7 +215,7 @@ PrefabInstance:
     - target: {fileID: 1428786988252753047, guid: 4bf74cce35f76a34295e09afe5764fd5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1428786988252753047, guid: 4bf74cce35f76a34295e09afe5764fd5,
         type: 3}
@@ -431,6 +431,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -470,16 +480,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.843
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -819,6 +819,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -858,16 +868,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.832
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -1088,6 +1088,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1988919401}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -1127,16 +1137,6 @@ PrefabInstance:
         type: 3}
       propertyPath: endHieght
       value: 0.167
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -1417,6 +1417,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -1456,16 +1466,6 @@ PrefabInstance:
         type: 3}
       propertyPath: endHieght
       value: -1.767
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -1814,6 +1814,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1988919401}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -1853,16 +1863,6 @@ PrefabInstance:
         type: 3}
       propertyPath: endHieght
       value: -1.705
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -2359,7 +2359,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onBeamHoldInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 633195443}
+      objectReference: {fileID: 1988919402}
     - target: {fileID: 5698084106205643066, guid: 3376cdf0f5fa4cd4fa64931ce37e0a13,
         type: 3}
       propertyPath: onBeamHoldInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -3249,6 +3249,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -3288,16 +3298,6 @@ PrefabInstance:
         type: 3}
       propertyPath: endHieght
       value: 0.028
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -3474,6 +3474,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1988919401}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -3513,16 +3523,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.836
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -3663,6 +3663,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -3702,16 +3712,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.827
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -3992,6 +3992,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1988919401}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -4031,16 +4041,6 @@ PrefabInstance:
         type: 3}
       propertyPath: endHieght
       value: -0.554
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -4353,6 +4353,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -4392,16 +4402,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.823
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -4590,6 +4590,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -4629,16 +4639,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -4955,7 +4955,7 @@ PrefabInstance:
     - target: {fileID: 4668725311586704935, guid: f5b484ec4951bf24da2c7a433ab168ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4668725311586704935, guid: f5b484ec4951bf24da2c7a433ab168ad,
         type: 3}
@@ -4997,6 +4997,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1988919401}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -5036,16 +5046,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.838
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -5324,6 +5324,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -5363,16 +5373,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.838
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -6117,7 +6117,7 @@ PrefabInstance:
     - target: {fileID: 4640718758163894406, guid: 7405b1fb381f8c643ad2063f0d9b3064,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4640718758163894406, guid: 7405b1fb381f8c643ad2063f0d9b3064,
         type: 3}
@@ -6431,6 +6431,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1988919401}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -6470,16 +6480,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.836
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -6700,6 +6700,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -6739,16 +6749,6 @@ PrefabInstance:
         type: 3}
       propertyPath: endHieght
       value: -0.651
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -6865,6 +6865,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633065632}
     m_Modifications:
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_Name
+      value: SingleStairVines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022165059610847806, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
       propertyPath: beginPos.x
@@ -6904,16 +6914,6 @@ PrefabInstance:
         type: 3}
       propertyPath: beginHeight
       value: -1.832
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_Name
-      value: SingleStairVines
-      objectReference: {fileID: 0}
-    - target: {fileID: 8008318680729845584, guid: 2fb3f9f10341a7c45b70f47658eeb733,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8008318680729478000, guid: 2fb3f9f10341a7c45b70f47658eeb733,
         type: 3}
@@ -9634,7 +9634,7 @@ PrefabInstance:
     - target: {fileID: 3366928137600002519, guid: 852122ae783d0294394f77030fb4d4a8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3366928137600002519, guid: 852122ae783d0294394f77030fb4d4a8,
         type: 3}
