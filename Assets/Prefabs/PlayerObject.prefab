@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: bacb6b72e469ee547bdec5f9f5b30192, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bacb6b72e469ee547bdec5f9f5b30192, type: 3}
       propertyPath: m_LocalPosition.x
@@ -231,6 +231,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wings_Animations
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cc8bd12acd5c0114784db915f176d668, type: 2}
     - target: {fileID: 400000, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.929999
@@ -275,15 +283,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: cc8bd12acd5c0114784db915f176d668, type: 2}
-    - target: {fileID: 13700000, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
+    - target: {fileID: 13700002, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 961f9fce4cd396d4d89771eef7d1ecc9, type: 2}
-    - target: {fileID: 13700002, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
+    - target: {fileID: 13700000, guid: 17eeb7f12072d4f4b8890ea00ece2ffc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 961f9fce4cd396d4d89771eef7d1ecc9, type: 2}

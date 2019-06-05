@@ -47,6 +47,18 @@ public class PlayerController : MonoBehaviour {
     Move(TargetDest, CallBack);
   }
 
+  public void RequestLookAt(Transform TargetLookAt, Action callback = null) {
+    LookAtRotation(TargetLookAt, callback);
+  }
+
+  private void LookAtRotation(Transform TargetLookAt, Action callback = null) {
+      transform.LookAt(TargetLookAt.transform);
+      Vector3 eulerAngles = transform.rotation.eulerAngles;
+      eulerAngles.x = 0;
+      eulerAngles.z = 0;
+      transform.rotation = Quaternion.Euler(eulerAngles);
+  }
+
   /// RequestStartCallBack is used to add functionality on start.
   public void RequestStartCallback(PlayerControllerState state, Action callback) {
     actions[(int)state].onStart += callback;
@@ -121,6 +133,7 @@ public class PlayerController : MonoBehaviour {
 
   /// Warp the player to the given position.
   public void WarpPlayer(Vector3 position) {
+    character.ResetMovement();
     navMeshAgent.Warp(position);
   }
 }

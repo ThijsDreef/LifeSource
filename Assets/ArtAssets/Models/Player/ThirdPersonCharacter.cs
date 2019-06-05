@@ -55,6 +55,10 @@ public class ThirdPersonCharacter : MonoBehaviour {
 
 	/// moves the character based on root motion
 	public void Move(Vector3 move, bool crouch, bool jump) {
+		if(!animator.applyRootMotion){
+			animator.applyRootMotion = true;
+			playerRigidbody.isKinematic = false;
+		}
 		// convert the world relative moveInput vector into a local-relative
 		// turn amount and forward amount required to head in the desired
 		// direction.
@@ -72,12 +76,18 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	}
 
 	public void FlyUpAnimation(){
+		playerRigidbody.isKinematic = true;
+		animator.applyRootMotion = false;
+		animator.SetBool("Landing", false);
 		animator.SetTrigger("FlyUp");
 		wingAnimtor.SetTrigger("FlyUp");
 	}
 
 	public void LandAnimation(){
-		animator.SetTrigger("Land");
+		playerRigidbody.isKinematic = true;
+		animator.applyRootMotion = false;
+		animator.SetBool("Landing", true);
+		wingAnimtor.SetTrigger("FlyLanding");
 	}
 	
 	public void ResetMovement() {
