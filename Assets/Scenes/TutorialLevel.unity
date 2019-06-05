@@ -559,6 +559,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6468858018855472569, guid: 4a248d3727718214e9b7f560642a8619,
+        type: 3}
+      propertyPath: m_Name
+      value: exit bull statue
+      objectReference: {fileID: 0}
     - target: {fileID: 7136022866256137622, guid: 4a248d3727718214e9b7f560642a8619,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -573,11 +578,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 2134
-      objectReference: {fileID: 0}
-    - target: {fileID: 6468858018855472569, guid: 4a248d3727718214e9b7f560642a8619,
-        type: 3}
-      propertyPath: m_Name
-      value: exit bull statue
       objectReference: {fileID: 0}
     - target: {fileID: 3149381815591780398, guid: 4a248d3727718214e9b7f560642a8619,
         type: 3}
@@ -5718,43 +5718,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.09523768
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -10.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543615306519076075, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99545455
       objectReference: {fileID: 0}
     - target: {fileID: 6543615306519494859, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
         type: 3}
@@ -5765,6 +5730,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shrine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543615306519494859, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2711508537043951823, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
         type: 3}
@@ -7047,10 +7017,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 942999542}
     m_Modifications:
-    - target: {fileID: 100000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
@@ -7058,6 +7024,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_Controller

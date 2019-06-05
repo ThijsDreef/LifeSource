@@ -120,20 +120,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4165344041985668090, guid: f109c51bef8428d48b1929ebe60bfbb5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 125.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165344041985668090, guid: f109c51bef8428d48b1929ebe60bfbb5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.94
-      objectReference: {fileID: 0}
     - target: {fileID: 6655930322683212074, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
       propertyPath: m_Name
       value: Hub
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165344041985668090, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 123.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165344041985668090, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165344041985668090, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6655930322683212075, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}

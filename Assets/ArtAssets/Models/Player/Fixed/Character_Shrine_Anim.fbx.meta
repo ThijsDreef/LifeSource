@@ -497,7 +497,12 @@ ModelImporter:
     13700004: Char:Hip_Stuff
     13700006: Char:Main_Body
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_lambert2
+    second: {fileID: 2100000, guid: 1cea2a09e6493134ba24224c2572e38e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
