@@ -68,31 +68,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4002896719798025092}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: targetEffect
-          m_BoolArgument: 1
-        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &4002896719798025092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6519268533706379696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dea3c5d50f9d834881ac7cba9cec97c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &7753380912766550783
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -147,16 +124,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2401397184043423810}
     m_Modifications:
-    - target: {fileID: 3778266127657225343, guid: 610d79f42f7255e469590ab4c0b192af,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778266127657225343, guid: 610d79f42f7255e469590ab4c0b192af,
-        type: 3}
-      propertyPath: m_Name
-      value: questionmarkerParticle
-      objectReference: {fileID: 0}
     - target: {fileID: 3036987901671334895, guid: 610d79f42f7255e469590ab4c0b192af,
         type: 3}
       propertyPath: m_Name
@@ -222,7 +189,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 3778266127657225343, guid: 610d79f42f7255e469590ab4c0b192af,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -233,8 +199,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: questionmarkerParticle
       objectReference: {fileID: 0}
-=======
->>>>>>> develop
     - target: {fileID: 4625878295875965440, guid: 610d79f42f7255e469590ab4c0b192af,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
