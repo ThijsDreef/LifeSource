@@ -9,11 +9,13 @@ public class SpawnPointLevel : MonoBehaviour {
     [SerializeField]
     private Transform landingSpawnPoint;
     /// Start warp the player to the spawn point.
+    [SerializeField]
+    private float CorrectStartRotation;
     private void OnEnable() {
-        PlayerController.Instance.SetCurrentSpawnPoint(spawnPoint.gameObject);
+         PlayerController.Instance.SetCurrentSpawnPoint(spawnPoint.gameObject);
         if(Landing) {
             PlayerController.Instance.WarpPlayer(landingSpawnPoint.position);
-            PlayerController.Instance.transform.eulerAngles = new Vector3(0,180,0);
+            PlayerController.Instance.transform.rotation = transform.parent.rotation;
             PlayerController.Instance.RequestPlayerLand(null);
         }
         else {
