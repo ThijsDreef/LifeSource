@@ -27,10 +27,17 @@ public class PlantRotationInteraction : RotateInteractor {
 		RaycastHit hit;
 		while(true) {
 			yield return new WaitForEndOfFrame();
-			if(Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit)) {
-				transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit.point - this.transform.position), Time.deltaTime * 6);
-				target.transform.position = hit.point;
-			}
+			#if (!UNITY_IPHONE || !UNITY_ANDROID)
+				if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit)) {
+					transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit.point - this.transform.position), Time.deltaTime * 6);
+					target.transform.position = hit.point;
+				} 
+			#else 
+				if(Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit)) {
+					transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit.point - this.transform.position), Time.deltaTime * 6);
+					target.transform.position = hit.point;
+				}
+			#endif
 		}
 	}
 }
