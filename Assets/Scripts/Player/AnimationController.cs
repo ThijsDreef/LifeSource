@@ -20,8 +20,4 @@ public class AnimationController : MonoBehaviour {
     animator.SetBool("Walking", true);
     animator.SetBool("Idle", false);
   }
-
-  private void InterActAnim() {
-
-  }
 }

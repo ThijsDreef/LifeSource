@@ -31,9 +31,7 @@ public class TempleInteract : EventActivator {
   }
   /// starts the new level if the required count is lower or equall to 0
   private void RequestTouch() {
-    Debug.Log(piecesToAdd.Count);
     if (piecesToAdd.Count != 3) return;
-    // TODO: should start next level here
     while (piecesToAdd.Count > 0) {
       props[((int)piecesToAdd.Pop()) - 1].gameObject.SetActive(true);
     }
@@ -42,7 +40,6 @@ public class TempleInteract : EventActivator {
     PlayerController.Instance.RequestPlayerShrineInteraction();
     PlayerController.Instance.ResetPlayer();
     PlayerController.Instance.RequestLookAt(this.transform);
-    //LevelHandler.Instance.ChangeLevel(levelToStart);
   }
 
   public void EnqueueTemplePiece(TemplePieceType piece) {
