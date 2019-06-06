@@ -1,0 +1,460 @@
+fileFormatVersion: 2
+guid: a0c29e6eea12dba4fa024858a9aa3022
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: big_helix
+    100002: big_helix 1
+    100004: big_helix 2
+    100006: big_helix 3
+    100008: big_helix 4
+    100010: big_helix 5
+    100012: big_helix 6
+    100014: big_helix 7
+    100016: first_step1
+    100018: first_step1 1
+    100020: first_step1 2
+    100022: first_step1 3
+    100024: first_step1 4
+    100026: first_step1 5
+    100028: first_step1 6
+    100030: first_step1 7
+    100032: pHelix10
+    100034: pHelix10 1
+    100036: pHelix10 2
+    100038: pHelix10 3
+    100040: pHelix10 4
+    100042: pHelix10 5
+    100044: pHelix10 6
+    100046: pHelix10 7
+    100048: pHelix4
+    100050: pHelix4 1
+    100052: pHelix4 2
+    100054: pHelix4 3
+    100056: pHelix4 4
+    100058: pHelix4 5
+    100060: pHelix4 6
+    100062: pHelix4 7
+    100064: pHelix9
+    100066: pHelix9 1
+    100068: pHelix9 2
+    100070: pHelix9 3
+    100072: pHelix9 4
+    100074: pHelix9 5
+    100076: pHelix9 6
+    100078: pHelix9 7
+    100080: polySurface34
+    100082: polySurface34 1
+    100084: polySurface34 2
+    100086: polySurface34 3
+    100088: polySurface34 4
+    100090: polySurface34 5
+    100092: polySurface34 6
+    100094: polySurface34 7
+    100096: polySurface36
+    100098: polySurface36 1
+    100100: polySurface36 2
+    100102: polySurface36 3
+    100104: polySurface36 4
+    100106: polySurface36 5
+    100108: polySurface36 6
+    100110: polySurface36 7
+    100112: polySurface38
+    100114: polySurface38 1
+    100116: polySurface38 2
+    100118: polySurface38 3
+    100120: polySurface38 4
+    100122: polySurface38 5
+    100124: polySurface38 6
+    100126: polySurface38 7
+    100128: //RootNode
+    100130: step_animated
+    100132: step_animated1
+    100134: step_animated2
+    100136: step_animated3
+    100138: step_animated4
+    100140: step_animated5
+    100142: step_animated6
+    100144: step_animated7
+    400000: big_helix
+    400002: big_helix 1
+    400004: big_helix 2
+    400006: big_helix 3
+    400008: big_helix 4
+    400010: big_helix 5
+    400012: big_helix 6
+    400014: big_helix 7
+    400016: first_step1
+    400018: first_step1 1
+    400020: first_step1 2
+    400022: first_step1 3
+    400024: first_step1 4
+    400026: first_step1 5
+    400028: first_step1 6
+    400030: first_step1 7
+    400032: pHelix10
+    400034: pHelix10 1
+    400036: pHelix10 2
+    400038: pHelix10 3
+    400040: pHelix10 4
+    400042: pHelix10 5
+    400044: pHelix10 6
+    400046: pHelix10 7
+    400048: pHelix4
+    400050: pHelix4 1
+    400052: pHelix4 2
+    400054: pHelix4 3
+    400056: pHelix4 4
+    400058: pHelix4 5
+    400060: pHelix4 6
+    400062: pHelix4 7
+    400064: pHelix9
+    400066: pHelix9 1
+    400068: pHelix9 2
+    400070: pHelix9 3
+    400072: pHelix9 4
+    400074: pHelix9 5
+    400076: pHelix9 6
+    400078: pHelix9 7
+    400080: polySurface34
+    400082: polySurface34 1
+    400084: polySurface34 2
+    400086: polySurface34 3
+    400088: polySurface34 4
+    400090: polySurface34 5
+    400092: polySurface34 6
+    400094: polySurface34 7
+    400096: polySurface36
+    400098: polySurface36 1
+    400100: polySurface36 2
+    400102: polySurface36 3
+    400104: polySurface36 4
+    400106: polySurface36 5
+    400108: polySurface36 6
+    400110: polySurface36 7
+    400112: polySurface38
+    400114: polySurface38 1
+    400116: polySurface38 2
+    400118: polySurface38 3
+    400120: polySurface38 4
+    400122: polySurface38 5
+    400124: polySurface38 6
+    400126: polySurface38 7
+    400128: //RootNode
+    400130: step_animated
+    400132: step_animated1
+    400134: step_animated2
+    400136: step_animated3
+    400138: step_animated4
+    400140: step_animated5
+    400142: step_animated6
+    400144: step_animated7
+    2100000: vine_step
+    2300000: big_helix
+    2300002: big_helix 1
+    2300004: big_helix 2
+    2300006: big_helix 3
+    2300008: big_helix 4
+    2300010: big_helix 5
+    2300012: big_helix 6
+    2300014: big_helix 7
+    2300016: first_step1
+    2300018: first_step1 1
+    2300020: first_step1 2
+    2300022: first_step1 3
+    2300024: first_step1 4
+    2300026: first_step1 5
+    2300028: first_step1 6
+    2300030: first_step1 7
+    2300032: pHelix10
+    2300034: pHelix10 1
+    2300036: pHelix10 2
+    2300038: pHelix10 3
+    2300040: pHelix10 4
+    2300042: pHelix10 5
+    2300044: pHelix10 6
+    2300046: pHelix10 7
+    2300048: pHelix4
+    2300050: pHelix4 1
+    2300052: pHelix4 2
+    2300054: pHelix4 3
+    2300056: pHelix4 4
+    2300058: pHelix4 5
+    2300060: pHelix4 6
+    2300062: pHelix4 7
+    2300064: pHelix9
+    2300066: pHelix9 1
+    2300068: pHelix9 2
+    2300070: pHelix9 3
+    2300072: pHelix9 4
+    2300074: pHelix9 5
+    2300076: pHelix9 6
+    2300078: pHelix9 7
+    2300080: polySurface34
+    2300082: polySurface34 1
+    2300084: polySurface34 2
+    2300086: polySurface34 3
+    2300088: polySurface34 4
+    2300090: polySurface34 5
+    2300092: polySurface34 6
+    2300094: polySurface34 7
+    2300096: polySurface36
+    2300098: polySurface36 1
+    2300100: polySurface36 2
+    2300102: polySurface36 3
+    2300104: polySurface36 4
+    2300106: polySurface36 5
+    2300108: polySurface36 6
+    2300110: polySurface36 7
+    2300112: polySurface38
+    2300114: polySurface38 1
+    2300116: polySurface38 2
+    2300118: polySurface38 3
+    2300120: polySurface38 4
+    2300122: polySurface38 5
+    2300124: polySurface38 6
+    2300126: polySurface38 7
+    3300000: big_helix
+    3300002: big_helix 1
+    3300004: big_helix 2
+    3300006: big_helix 3
+    3300008: big_helix 4
+    3300010: big_helix 5
+    3300012: big_helix 6
+    3300014: big_helix 7
+    3300016: first_step1
+    3300018: first_step1 1
+    3300020: first_step1 2
+    3300022: first_step1 3
+    3300024: first_step1 4
+    3300026: first_step1 5
+    3300028: first_step1 6
+    3300030: first_step1 7
+    3300032: pHelix10
+    3300034: pHelix10 1
+    3300036: pHelix10 2
+    3300038: pHelix10 3
+    3300040: pHelix10 4
+    3300042: pHelix10 5
+    3300044: pHelix10 6
+    3300046: pHelix10 7
+    3300048: pHelix4
+    3300050: pHelix4 1
+    3300052: pHelix4 2
+    3300054: pHelix4 3
+    3300056: pHelix4 4
+    3300058: pHelix4 5
+    3300060: pHelix4 6
+    3300062: pHelix4 7
+    3300064: pHelix9
+    3300066: pHelix9 1
+    3300068: pHelix9 2
+    3300070: pHelix9 3
+    3300072: pHelix9 4
+    3300074: pHelix9 5
+    3300076: pHelix9 6
+    3300078: pHelix9 7
+    3300080: polySurface34
+    3300082: polySurface34 1
+    3300084: polySurface34 2
+    3300086: polySurface34 3
+    3300088: polySurface34 4
+    3300090: polySurface34 5
+    3300092: polySurface34 6
+    3300094: polySurface34 7
+    3300096: polySurface36
+    3300098: polySurface36 1
+    3300100: polySurface36 2
+    3300102: polySurface36 3
+    3300104: polySurface36 4
+    3300106: polySurface36 5
+    3300108: polySurface36 6
+    3300110: polySurface36 7
+    3300112: polySurface38
+    3300114: polySurface38 1
+    3300116: polySurface38 2
+    3300118: polySurface38 3
+    3300120: polySurface38 4
+    3300122: polySurface38 5
+    3300124: polySurface38 6
+    3300126: polySurface38 7
+    4300000: polySurface36
+    4300002: pHelix10
+    4300004: polySurface38
+    4300006: big_helix
+    4300008: pHelix9
+    4300010: pHelix4
+    4300012: polySurface34
+    4300014: first_step1
+    4300016: polySurface36
+    4300018: pHelix10
+    4300020: polySurface38
+    4300022: big_helix
+    4300024: pHelix9
+    4300026: pHelix4
+    4300028: polySurface34
+    4300030: first_step1
+    4300032: polySurface36
+    4300034: pHelix10
+    4300036: polySurface38
+    4300038: big_helix
+    4300040: pHelix9
+    4300042: pHelix4
+    4300044: polySurface34
+    4300046: first_step1
+    4300048: polySurface36
+    4300050: pHelix10
+    4300052: polySurface38
+    4300054: big_helix
+    4300056: pHelix9
+    4300058: pHelix4
+    4300060: polySurface34
+    4300062: first_step1
+    4300064: polySurface36
+    4300066: pHelix10
+    4300068: polySurface38
+    4300070: big_helix
+    4300072: pHelix9
+    4300074: pHelix4
+    4300076: polySurface34
+    4300078: first_step1
+    4300080: polySurface36
+    4300082: pHelix10
+    4300084: polySurface38
+    4300086: big_helix
+    4300088: pHelix9
+    4300090: pHelix4
+    4300092: polySurface34
+    4300094: first_step1
+    4300096: polySurface36
+    4300098: pHelix10
+    4300100: polySurface38
+    4300102: big_helix
+    4300104: pHelix9
+    4300106: pHelix4
+    4300108: polySurface34
+    4300110: first_step1
+    4300112: polySurface36
+    4300114: pHelix10
+    4300116: polySurface38
+    4300118: big_helix
+    4300120: pHelix9
+    4300122: pHelix4
+    4300124: polySurface34
+    4300126: first_step1
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

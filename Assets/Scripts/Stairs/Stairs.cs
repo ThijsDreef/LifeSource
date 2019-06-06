@@ -11,6 +11,11 @@ public class Stairs : MonoBehaviour {
     private void Start() {
         stairs = GetComponentsInChildren<StairElement>();
     }
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.Y)){
+            EnableStairs();
+        }
+    }
 
     /// Starts a coroutine to enable a stair raise function with a small delay between stair components.
     public void EnableStairs() {

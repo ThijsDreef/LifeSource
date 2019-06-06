@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
   private Coroutine currentRoutine = null;
   private Interactable interactable;
   ThirdPersonCharacter character;
+  public Transform currentSpawnPoint;
 
   private void Awake() {
     if (Instance == null) {
@@ -47,6 +48,26 @@ public class PlayerController : MonoBehaviour {
     Move(TargetDest, CallBack);
   }
 
+  public void SetCurrentSpawnPoint(GameObject spawnPoint){
+    SetSpawnPoint(spawnPoint);
+  }
+
+  private void SetSpawnPoint(GameObject spawnPoint){
+    currentSpawnPoint = spawnPoint.transform;
+  }
+
+  public void RequestLookAt(Transform TargetLookAt, Action callback = null) {
+    LookAtRotation(TargetLookAt, callback);
+  }
+
+  private void LookAtRotation(Transform TargetLookAt, Action callback = null) {
+      transform.LookAt(TargetLookAt.transform);
+      Vector3 eulerAngles = transform.rotation.eulerAngles;
+      eulerAngles.x = 0;
+      eulerAngles.z = 0;
+      transform.rotation = Quaternion.Euler(eulerAngles);
+  }
+
   /// RequestStartCallBack is used to add functionality on start.
   public void RequestStartCallback(PlayerControllerState state, Action callback) {
     actions[(int)state].onStart += callback;
@@ -62,6 +83,20 @@ public class PlayerController : MonoBehaviour {
   private void StopInteract() {
     interactable.StopInteract();
   }
+
+  public void RequestPlayerFlyUp(Action Callback){
+    character.FlyUpAnimation();
+    character.ResetMovement();
+  }
+
+  public void RequestPlayerLand(Action Callback){
+    character.LandAnimation();
+  }
+
+  public void RequestPlayerShrineInteraction(){
+    character.ShrineActivationAnimation();
+  }
+
 
   private void SetState(PlayerControllerState state) {
     actions[(int)currentPlayerState].onEnd?.Invoke();
@@ -111,6 +146,11 @@ public class PlayerController : MonoBehaviour {
 
   /// Warp the player to the given position.
   public void WarpPlayer(Vector3 position) {
+    ResetPlayer();
     navMeshAgent.Warp(position);
+  }
+
+  public void ResetPlayer(){
+    character.ResetMovement();
   }
 }

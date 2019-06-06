@@ -14,8 +14,8 @@ public class StairElement : MonoBehaviour {
     
     [SerializeField]
     private float raiseSpeed;
-
-    private void Start() {
+    
+    private void OnEnable() {
         raiseSpeed = Random.Range(1.5f, 3f);
         endPos = new Vector3(transform.localPosition.x, endHieght, transform.localPosition.z);
         beginPos = new Vector3(transform.localPosition.x, beginHeight, transform.localPosition.z);

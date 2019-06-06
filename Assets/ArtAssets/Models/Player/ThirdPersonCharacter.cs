@@ -21,6 +21,8 @@ public class ThirdPersonCharacter : MonoBehaviour {
 
 	private Rigidbody playerRigidbody;
 	private Animator animator;
+	[SerializeField]
+	private Animator wingAnimtor;
 	private bool isGrounded;
 	private	float startOriginGroundCheckDistance;
 	private const float charachterHalf = 0.5f;
@@ -53,6 +55,10 @@ public class ThirdPersonCharacter : MonoBehaviour {
 
 	/// moves the character based on root motion
 	public void Move(Vector3 move, bool crouch, bool jump) {
+		if(!animator.applyRootMotion){
+			animator.applyRootMotion = true;
+			playerRigidbody.isKinematic = false;
+		}
 		// convert the world relative moveInput vector into a local-relative
 		// turn amount and forward amount required to head in the desired
 		// direction.
@@ -67,6 +73,31 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		
 		// send input and other state parameters to the animator
 		UpdateAnimator(move);
+	}
+
+	public void FlyUpAnimation(){
+		playerRigidbody.isKinematic = true;
+		animator.applyRootMotion = false;
+		animator.SetBool("Landing", false);
+		wingAnimtor.SetTrigger("FlyUp");
+		animator.SetTrigger("FlyUp");
+	}
+
+	public void LandAnimation(){
+		playerRigidbody.isKinematic = true;
+		animator.applyRootMotion = false;
+		animator.SetBool("Landing", true);
+		wingAnimtor.SetTrigger("FlyLanding");
+	}
+
+	 public void ShrineActivationAnimation(){
+		 animator.SetTrigger("ShrineActivation");
+	 }
+	
+	public void ResetMovement() {
+		Debug.Log("reseted");
+		animator.SetFloat("Forward", 0);
+		animator.SetFloat("Turn", 0);
 	}
 
 
@@ -101,10 +132,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// help the character turn faster (this is in addition to root rotation in the animation)
 		float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
-	}
-
-	private void ReflectorRotation(){
-		
 	}
 
 	private void CheckGroundStatus() {
