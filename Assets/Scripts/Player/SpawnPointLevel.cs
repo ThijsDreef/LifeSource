@@ -13,11 +13,11 @@ public class SpawnPointLevel : MonoBehaviour {
 		PlayerController.Instance.SetCurrentSpawnPoint(spawnPoint.gameObject);
 		if(Landing) {
 			PlayerController.Instance.WarpPlayer(landingSpawnPoint.position);
-			PlayerController.Instance.transform.eulerAngles = new Vector3(0,180,0);
+			PlayerController.Instance.transform.rotation = transform.parent.rotation;
 			PlayerController.Instance.RequestPlayerLand(null);
 		}
 		else {
-			PlayerController.Instance.WarpPlayer(PlayerController.Instance.currentSpawnPoint.transform.position);   
+			PlayerController.Instance.WarpPlayer(PlayerController.Instance.currentSpawnPoint.transform.position);
 		}
 	}
 }
