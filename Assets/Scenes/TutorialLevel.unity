@@ -564,6 +564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: exit bull statue
       objectReference: {fileID: 0}
+    - target: {fileID: 6468858018855472569, guid: 4a248d3727718214e9b7f560642a8619,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3149381815591780398, guid: 4a248d3727718214e9b7f560642a8619,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -617,6 +622,26 @@ PrefabInstance:
     - target: {fileID: 3149381815591780398, guid: 4a248d3727718214e9b7f560642a8619,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833347893486633452, guid: 4a248d3727718214e9b7f560642a8619,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833347893486633454, guid: 4a248d3727718214e9b7f560642a8619,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120459441891303662, guid: 4a248d3727718214e9b7f560642a8619,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472293132781630416, guid: 4a248d3727718214e9b7f560642a8619,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6598,6 +6623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1074018347423772019, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
+        type: 3}
+      propertyPath: levelToUnlock
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1792850288, guid: 41e5113a0104ff14ab9e1e4f123dbe31, type: 3}

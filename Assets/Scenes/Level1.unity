@@ -2320,6 +2320,11 @@ PrefabInstance:
       propertyPath: onBeamHoldInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5698084106205643066, guid: 3376cdf0f5fa4cd4fa64931ce37e0a13,
+        type: 3}
+      propertyPath: onBeamHoldInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6519268533706379352, guid: 3376cdf0f5fa4cd4fa64931ce37e0a13,
         type: 3}
       propertyPath: m_Layer
@@ -8928,7 +8933,7 @@ PrefabInstance:
     - target: {fileID: 8138608434484826053, guid: 852122ae783d0294394f77030fb4d4a8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8138608434484826053, guid: 852122ae783d0294394f77030fb4d4a8,
         type: 3}
@@ -12319,6 +12324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2655469894491054717, guid: 852122ae783d0294394f77030fb4d4a8,
+        type: 3}
+      propertyPath: levelToUnlock
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852122ae783d0294394f77030fb4d4a8, type: 3}
