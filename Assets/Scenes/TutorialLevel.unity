@@ -5007,6 +5007,11 @@ PrefabInstance:
       propertyPath: onBeamInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 172056671994376674, guid: 41e5113a0104ff14ab9e1e4f123dbe31,
+        type: 3}
+      propertyPath: onBeamHoldInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 449068722, guid: 41e5113a0104ff14ab9e1e4f123dbe31, type: 3}
       propertyPath: m_CullingMode
       value: 1
@@ -7017,6 +7022,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 942999542}
     m_Modifications:
+    - target: {fileID: 100000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
@@ -7024,10 +7033,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: d8db3e7f507d20a4f8f39bfcd9ce65f9, type: 3}
       propertyPath: m_Controller

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
   private Coroutine currentRoutine = null;
   private Interactable interactable;
   ThirdPersonCharacter character;
+  public Transform currentSpawnPoint;
 
   private void Awake() {
     if (Instance == null) {
@@ -45,6 +46,14 @@ public class PlayerController : MonoBehaviour {
   /// Function to set a new destination for the navMesh player movement, with callback.
   public void RequestMove(Vector3 TargetDest, Action CallBack = null) {
     Move(TargetDest, CallBack);
+  }
+
+  public void SetCurrentSpawnPoint(GameObject spawnPoint){
+    SetSpawnPoint(spawnPoint);
+  }
+
+  private void SetSpawnPoint(GameObject spawnPoint){
+    currentSpawnPoint = spawnPoint.transform;
   }
 
   public void RequestLookAt(Transform TargetLookAt, Action callback = null) {
@@ -84,6 +93,11 @@ public class PlayerController : MonoBehaviour {
     character.LandAnimation();
   }
 
+  public void RequestPlayerShrineInteraction(){
+    character.ShrineActivationAnimation();
+  }
+
+
   private void SetState(PlayerControllerState state) {
     actions[(int)currentPlayerState].onEnd?.Invoke();
     currentPlayerState = state;
@@ -113,7 +127,6 @@ public class PlayerController : MonoBehaviour {
       }
       if (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance) {
         character.Move(navMeshAgent.desiredVelocity, false, false);
-        Debug.Log("Moving");
         yield return null;
         continue;
       }
@@ -133,7 +146,11 @@ public class PlayerController : MonoBehaviour {
 
   /// Warp the player to the given position.
   public void WarpPlayer(Vector3 position) {
-    character.ResetMovement();
+    ResetPlayer();
     navMeshAgent.Warp(position);
+  }
+
+  public void ResetPlayer(){
+    character.ResetMovement();
   }
 }

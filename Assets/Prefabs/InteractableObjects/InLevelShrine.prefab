@@ -224,7 +224,7 @@ PrefabInstance:
         type: 3}
       propertyPath: temple
       value: 
-      objectReference: {fileID: 8906514550308950579}
+      objectReference: {fileID: 844297789535736711}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a1cba66e96f6544a568de179a41a2b, type: 3}
 --- !u!4 &5998845882362166740 stripped
@@ -348,18 +348,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2777722572907772861}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8906514550308950579 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6707610533899741582, guid: 936cb74fa6e6c1c41b2c7973c3f80433,
-    type: 3}
-  m_PrefabInstance: {fileID: 2777722572907772861}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f329317d4e7517e449a425597723cf50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3073599686796611711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -436,7 +424,7 @@ PrefabInstance:
         type: 3}
       propertyPath: temple
       value: 
-      objectReference: {fileID: 8906514550308950579}
+      objectReference: {fileID: 844297789535736711}
     - target: {fileID: 96328617347475526, guid: 3068afb116f429049940d64303ffd931,
         type: 3}
       propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -531,7 +519,7 @@ PrefabInstance:
         type: 3}
       propertyPath: temple
       value: 
-      objectReference: {fileID: 8906514550308950579}
+      objectReference: {fileID: 844297789535736711}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bd12352328ad4eb177e3e1a09aa71, type: 3}
 --- !u!4 &8636387880467467914 stripped
@@ -740,6 +728,22 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: aa3d3ea744bf16c44970a51c734e88d7, type: 2}
+    - target: {fileID: 100024, guid: aa1ba5ba3f62a99408d8f65d00b8bc50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: aa1ba5ba3f62a99408d8f65d00b8bc50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100052, guid: aa1ba5ba3f62a99408d8f65d00b8bc50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700012, guid: aa1ba5ba3f62a99408d8f65d00b8bc50, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b2c647d6abfebf4e8536eb84063ae1e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1ba5ba3f62a99408d8f65d00b8bc50, type: 3}
 --- !u!1 &8315433835614545958 stripped

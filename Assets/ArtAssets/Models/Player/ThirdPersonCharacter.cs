@@ -79,8 +79,8 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		playerRigidbody.isKinematic = true;
 		animator.applyRootMotion = false;
 		animator.SetBool("Landing", false);
-		animator.SetTrigger("FlyUp");
 		wingAnimtor.SetTrigger("FlyUp");
+		animator.SetTrigger("FlyUp");
 	}
 
 	public void LandAnimation(){
@@ -89,6 +89,10 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		animator.SetBool("Landing", true);
 		wingAnimtor.SetTrigger("FlyLanding");
 	}
+
+	 public void ShrineActivationAnimation(){
+		 animator.SetTrigger("ShrineActivation");
+	 }
 	
 	public void ResetMovement() {
 		Debug.Log("reseted");
@@ -128,10 +132,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 		// help the character turn faster (this is in addition to root rotation in the animation)
 		float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
 		transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
-	}
-
-	private void ReflectorRotation(){
-		
 	}
 
 	private void CheckGroundStatus() {

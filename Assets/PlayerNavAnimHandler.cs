@@ -23,7 +23,7 @@ public class PlayerNavAnimHandler : StateMachineBehaviour {
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		if(!navMeshAgent) navMeshAgent = animator.gameObject.GetComponent<NavMeshAgent>();
 		if(stateInfo.IsName("Fly_landing_fix_Anim")){
-			//PlayerController.Instance.WarpPlayer();
+			PlayerController.Instance.WarpPlayer(PlayerController.Instance.currentSpawnPoint.transform.position);
 		}
 
 		if(stateInfo.IsName("Reflector_Release_Anim") || stateInfo.IsName("Shrine_Anim") || stateInfo.IsName("Fly_landing_fix_Anim")){

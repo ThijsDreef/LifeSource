@@ -11,9 +11,12 @@ public class TempleInteract : EventActivator {
   [SerializeField]
   private Transform[] props = new Transform[3];
   private float contactOffset = 0.0f;
+  private Animator shrineAnimator;
+  
 
   private void Awake() {
-    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
+    contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.75f;
+    shrineAnimator = GetComponent<Animator>();
   }
 
   /// requests the player to move towards this gameobject and when it reaches it requests touch
@@ -28,13 +31,18 @@ public class TempleInteract : EventActivator {
   }
   /// starts the new level if the required count is lower or equall to 0
   private void RequestTouch() {
+    Debug.Log(piecesToAdd.Count);
     if (piecesToAdd.Count != 3) return;
     // TODO: should start next level here
     while (piecesToAdd.Count > 0) {
       props[((int)piecesToAdd.Pop()) - 1].gameObject.SetActive(true);
     }
     LevelHandler.Instance.UnlockLevel(levelToUnlock);
-    LevelHandler.Instance.ChangeLevel(levelToStart);
+    shrineAnimator.SetTrigger("FinishedLevel");
+    PlayerController.Instance.RequestPlayerShrineInteraction();
+    PlayerController.Instance.ResetPlayer();
+    PlayerController.Instance.RequestLookAt(this.transform);
+    //LevelHandler.Instance.ChangeLevel(levelToStart);
   }
 
   public void EnqueueTemplePiece(TemplePieceType piece) {
