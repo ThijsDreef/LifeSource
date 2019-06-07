@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RemoteSound : MonoBehaviour {
 
-    public void Play(string soundName) {
-        SoundController.Instance.PlaySound(soundName);
-    }
+	public void Play(string soundName) {
+		SoundController.Instance.PlaySound(soundName);
+	}
 }

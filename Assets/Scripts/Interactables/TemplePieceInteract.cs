@@ -23,12 +23,6 @@ public class TemplePieceInteract : EventActivator {
   private TemplePieceType type;
   public TemplePieceType Type {get {return type;} }
 
-  private float contactOffset = 0.0f;
-
-  private void Awake() {
-    // contactOffset = GetComponent<BoxCollider>().size.z * this.transform.localScale.z * 0.5f;
-  }
-
   /// requests pickup of the collectable
   protected override void HoldInteract() {
     base.HoldInteract();
@@ -42,7 +36,7 @@ public class TemplePieceInteract : EventActivator {
 
   /// requests player to move towards this gameobject and execute OnPickUp at arrival
   private void RequestPickUp() {
-    PlayerController.Instance.RequestMove(this.transform.position + this.transform.forward * contactOffset, this.OnPickUp);
+    PlayerController.Instance.RequestMove(this.transform.position, this.OnPickUp);
   }
 
   /// destroys this object and decrements the counter

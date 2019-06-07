@@ -11,6 +11,7 @@ public class BeamVisualizer : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
     }
 
+    /// draws the vector3 list with hits as lines
     public void VisualDraw(List<Vector3> hits) {
         lineRenderer.positionCount = hits.Count;
         lineRenderer.SetPositions(hits.ToArray());
