@@ -95,7 +95,6 @@ public class ThirdPersonCharacter : MonoBehaviour {
 	 }
 	
 	public void ResetMovement() {
-		Debug.Log("reseted");
 		animator.SetFloat("Forward", 0);
 		animator.SetFloat("Turn", 0);
 	}

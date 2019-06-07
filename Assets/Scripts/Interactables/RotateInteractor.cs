@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class RotateInteractor : EventActivator {
   private Coroutine interactCoroutine;
-  private float contactOffset = 0.0f;
-  private void Awake() {
-    Debug.LogError(contactOffset);
-  }
+
   private void MoveToInteract() {
 		ParticleContainer.Instance.EmitInteractParticle(this.transform.position);
-    PlayerController.Instance.RequestMove(this.transform.position + this.transform.forward * contactOffset, this.RequestRotate);
+    PlayerController.Instance.RequestMove(this.transform.position, this.RequestRotate);
   }
 
   protected override void HoldInteract() {

@@ -120,6 +120,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7978704437544538203, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_Name
+      value: HubSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Landing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: CorrectStartRotation
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 6655930322683212074, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
       propertyPath: m_Name
@@ -742,10 +755,15 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
-    - target: {fileID: 5532550989086569212, guid: f109c51bef8428d48b1929ebe60bfbb5,
+    - target: {fileID: 7687727685192274193, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
-      propertyPath: Landing
-      value: 1
+      propertyPath: m_LocalPosition.x
+      value: 5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687727685192274193, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f109c51bef8428d48b1929ebe60bfbb5, type: 3}
@@ -812,41 +830,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &6655930323344471658 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6655930322683212074, guid: f109c51bef8428d48b1929ebe60bfbb5,
-    type: 3}
-  m_PrefabInstance: {fileID: 6655930323344471654}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6655930323344471659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6655930323344471658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 311
-  m_UseGeometry: 1
-  m_DefaultArea: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.15666667
-  m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 3944f38c2060d7749a46f77bc52623a3, type: 2}
 --- !u!114 &6655930323344471660 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1278293096701243544, guid: f109c51bef8428d48b1929ebe60bfbb5,

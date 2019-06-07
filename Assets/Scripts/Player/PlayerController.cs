@@ -16,14 +16,13 @@ public class PlayerController : MonoBehaviour {
   private bool TargetReached;
   private Coroutine currentRoutine = null;
   private Interactable interactable;
-  ThirdPersonCharacter character;
+  private ThirdPersonCharacter character;
   public Transform currentSpawnPoint;
 
   private void Awake() {
     if (Instance == null) {
       Instance = this;
-    }
-    else if (Instance != this) {
+    } else if (Instance != this) {
       Destroy(gameObject);
     }
   }
@@ -36,8 +35,8 @@ public class PlayerController : MonoBehaviour {
   }
 
   private void Update() {
-    if(navMeshAgent.hasPath){
-      if(TargetReached || navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance){
+    if(navMeshAgent.hasPath) {
+      if(TargetReached || navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance) {
         character.Move(Vector3.zero, false ,false);
      }
     }
@@ -61,11 +60,11 @@ public class PlayerController : MonoBehaviour {
   }
 
   private void LookAtRotation(Transform TargetLookAt, Action callback = null) {
-      transform.LookAt(TargetLookAt.transform);
-      Vector3 eulerAngles = transform.rotation.eulerAngles;
-      eulerAngles.x = 0;
-      eulerAngles.z = 0;
-      transform.rotation = Quaternion.Euler(eulerAngles);
+    transform.LookAt(TargetLookAt.transform);
+    Vector3 eulerAngles = transform.rotation.eulerAngles;
+    eulerAngles.x = 0;
+    eulerAngles.z = 0;
+    transform.rotation = Quaternion.Euler(eulerAngles);
   }
 
   /// RequestStartCallBack is used to add functionality on start.
@@ -105,6 +104,7 @@ public class PlayerController : MonoBehaviour {
   }
 
   private void Move(Vector3 TargetDest, Action CallBack) {
+    if (!navMeshAgent.isOnNavMesh) return;
     NavMeshHit hit;
     if (!NavMesh.SamplePosition(TargetDest, out hit, 10.0f, NavMesh.AllAreas)) {
       Debug.LogError("could not reach destination");
