@@ -19,6 +19,11 @@ public class PlayerController : MonoBehaviour {
   private ThirdPersonCharacter character;
   public Transform currentSpawnPoint;
 
+  [SerializeField]
+  private GameObject[] particles;
+  [SerializeField]
+  private ParticleSystem wings;
+
   private void Awake() {
     if (Instance == null) {
       Instance = this;
@@ -152,5 +157,21 @@ public class PlayerController : MonoBehaviour {
 
   public void ResetPlayer(){
     character.ResetMovement();
+  }
+
+  public void EnableParticles(int particle){
+    particles[particle].SetActive(true);
+  }
+
+  public void DisableParticles(int particle){
+    particles[particle].SetActive(false);
+  }
+
+  public void PlayParticle(){
+    wings.Play();
+  }
+
+  public void StopParticle(){
+    wings.Stop();
   }
 }

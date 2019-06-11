@@ -12,6 +12,9 @@ public class TempleInteract : EventActivator {
   private Transform[] props = new Transform[3];
   private float contactOffset = 0.0f;
   private Animator shrineAnimator;
+
+  [SerializeField]
+  private GameObject[] Particles;
   
 
   private void Awake() {
@@ -45,4 +48,12 @@ public class TempleInteract : EventActivator {
   public void EnqueueTemplePiece(TemplePieceType piece) {
     piecesToAdd.Push(piece);
   }
+
+  public void ActivateParticle(int activor){
+    EnableParticle(activor);
+  }
+
+  private void EnableParticle(int particle){
+    Particles[particle].gameObject.SetActive(true);
+  } 
 }

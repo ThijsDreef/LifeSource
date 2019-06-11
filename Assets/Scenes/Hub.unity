@@ -120,11 +120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7978704437544538203, guid: f109c51bef8428d48b1929ebe60bfbb5,
-        type: 3}
-      propertyPath: m_Name
-      value: HubSpawner
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Landing
       value: 1
@@ -137,6 +132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hub
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978704437544538203, guid: f109c51bef8428d48b1929ebe60bfbb5,
+        type: 3}
+      propertyPath: m_Name
+      value: HubSpawner
       objectReference: {fileID: 0}
     - target: {fileID: 4165344041985668090, guid: f109c51bef8428d48b1929ebe60bfbb5,
         type: 3}
